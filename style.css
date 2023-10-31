@@ -1,0 +1,9 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 5000; /* Tăng chiều cao tối thiểu lên 100% của chiều cao của màn hình */
+    min-width: 100%; /* Tăng chiều rộng tối thiểu lên 100% của chiều rộng của màn hình */
+    overflow: auto;
+    background-color: #000000; /* Màu đen hệ hex (#000000) */
+}
