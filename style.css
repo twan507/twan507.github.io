@@ -1,9 +1,13 @@
 .container {
+    width: 100%; /* Ví dụ: 600px */
+    height: 100%; /* Ví dụ: 800px */
+    overflow: auto; /* Cho phép cuộn */
+    -webkit-mask-image: linear-gradient(0deg, transparent, transparent 100px, #000000 100px);
+    mask-image: linear-gradient(0deg, transparent, transparent 100px, #000000 100px);
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 5000; /* Tăng chiều cao tối thiểu lên 100% của chiều cao của màn hình */
+    min-height: 100%; /* Tăng chiều cao tối thiểu lên 100% của chiều cao của màn hình */
     min-width: 100%; /* Tăng chiều rộng tối thiểu lên 100% của chiều rộng của màn hình */
-    overflow: auto;
-    background-color: #000000; /* Màu đen hệ hex (#000000) */
+    background-color: #000000;
 }
