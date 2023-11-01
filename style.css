@@ -14,7 +14,7 @@
 }
 
 ::-webkit-scrollbar {
-    width: 15px; /* Bạn có thể điều chỉnh chiều rộng này */
+    width: 8px; /* Bạn có thể điều chỉnh chiều rộng này */
 }
 
 ::-webkit-scrollbar-track {
@@ -31,7 +31,6 @@
 
 body {
     margin: 0;
-    padding: 0;
     background-color: #000000;
 }
 
