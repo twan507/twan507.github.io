@@ -9,12 +9,12 @@
     min-width: 100%; /* Tăng chiều rộng tối thiểu lên 100% của chiều rộng của màn hình */
     overflow: auto;
     background-color: #000000;
-    -webkit-mask-image: linear-gradient(0deg, transparent, transparent 60px, #000000 60px);
-    mask-image: linear-gradient(0deg, transparent, transparent 60px, #000000 60px);
+/*     -webkit-mask-image: linear-gradient(0deg, transparent, transparent 60px, #000000 60px);
+    mask-image: linear-gradient(0deg, transparent, transparent 60px, #000000 60px); */
 }
 
-::-webkit-scrollbar {
-    width: 8px; /* Bạn có thể điều chỉnh chiều rộng này */
+/* ::-webkit-scrollbar {
+    width: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -22,15 +22,15 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #555; /* Màu đen cho phần tự di chuyển của thanh cuộn */
+    background: #555;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #555; /* Bạn có thể đặt màu khác khi di chuột qua phần tự di chuyển của thanh cuộn */
+    background: #555;
 }
 
 body {
     margin: 0;
     background-color: #000000;
 }
-
+ */
