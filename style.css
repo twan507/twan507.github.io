@@ -29,16 +29,6 @@ iframe {
     border: none; /* loại bỏ đường viền mặc định */
 }
 
-.black-rectangle {
-    position: absolute; /* Đặt vị trí tuyệt đối để có thể định vị trong .container */
-    left: 0; /* Đặt vị trí bên trái của .container */
-    width: 50px; /* Độ rộng cố định */
-    height: 100%; /* Chiều cao bằng với .container */
-    background-color: transparent; /* Màu nền đen */
-    z-index: 100; 
-  }
-  
-
 /* ----------------------------------------------------------------------------------------------------------------------------- */
 ::-webkit-scrollbar {
     width: 8px; /* Bạn có thể điều chỉnh chiều rộng này */
