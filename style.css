@@ -137,7 +137,7 @@ header nav a:hover {
     
     header nav a {
         font-size: 12px; /* Giảm kích thước font chữ */
-        padding: 0 30px; /* Giảm padding giữa các liên kết */
+        padding: 0 15px; /* Giảm padding giữa các liên kết */
     }
 
     header nav a:hover {
