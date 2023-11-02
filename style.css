@@ -76,7 +76,7 @@ header nav a:hover {
 }
 
 /* CSS Responsive cho mobile */
-@media (max-width: 1600px) {
+@media (max-width: 1200px) {
     header {
         padding: 5px 10px; /* Giảm padding */
         height: auto; /* Cho phép chiều cao tự điều chỉnh */
@@ -98,7 +98,7 @@ header nav a:hover {
 }
 
 /* CSS Responsive cho mobile */
-@media (max-width: 1200px) {
+@media (max-width: 992px) {
     header {
         padding: 5px 10px; /* Giảm padding */
         height: auto; /* Cho phép chiều cao tự điều chỉnh */
@@ -116,12 +116,11 @@ header nav a:hover {
 
     #header-logo {
         height: 20px; /* Giảm kích thước logo */
-        display: none;
     }
 }
 
 /* CSS Responsive cho mobile */
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     header {
         padding: 0px 5px; /* Giảm padding */
         height: auto; /* Cho phép chiều cao tự điều chỉnh */
@@ -139,6 +138,7 @@ header nav a:hover {
 
     #header-logo {
         height: 15px; /* Giảm kích thước logo */
+        display: none;
     }
 }
 
