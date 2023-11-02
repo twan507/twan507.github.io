@@ -76,7 +76,7 @@ header nav a:hover {
 }
 
 /* CSS Responsive cho mobile */
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
     header {
         padding: 10px 20px; /* Giảm padding */
         height: auto; /* Cho phép chiều cao tự điều chỉnh */
@@ -98,7 +98,7 @@ header nav a:hover {
 }
 
 /* CSS Responsive cho mobile */
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
     header {
         padding: 5px 10px; /* Giảm padding */
         height: auto; /* Cho phép chiều cao tự điều chỉnh */
@@ -120,7 +120,7 @@ header nav a:hover {
 }
 
 /* CSS Responsive cho mobile */
-@media (max-width: 768px) {
+@media (max-width: 995px) {
     header {
         padding: 0px 5px; /* Giảm padding */
         height: auto; /* Cho phép chiều cao tự điều chỉnh */
