@@ -22,12 +22,19 @@ body {
     background-color: #000000;
 }
 
+iframe {
+    width: 1200px; /* chiếm toàn bộ chiều rộng của .iframe-container */
+    height: 3660px; /* chiếm toàn bộ chiều cao của .iframe-container */
+    border: none; /* loại bỏ đường viền mặc định */
+}
+
 .black-rectangle {
-    width: 50px;
-    height: auto; /* Chiều cao phụ thuộc vào nội dung, không cố định */
-    overflow: auto; /* Cho phép cuộn nếu cần */
-    background-color: transparent;
-    z-index: 100; /* Đảm bảo div nằm trên các phần tử khác */
+    position: absolute; /* Đặt vị trí tuyệt đối để có thể định vị trong .container */
+    left: 0; /* Đặt vị trí bên trái của .container */
+    width: 50px; /* Độ rộng cố định */
+    height: 100%; /* Chiều cao bằng với .container */
+    background-color: transparent; /* Màu nền đen */
+    z-index: 100; 
   }
   
 
