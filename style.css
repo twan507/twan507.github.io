@@ -13,8 +13,8 @@ html {
     align-items: center;
     justify-content: center;
     background-color: #000000;
-    /* -webkit-mask-image: linear-gradient(0deg, transparent, transparent 15%, #000000 15%);
-    mask-image: linear-gradient(0deg, transparent, transparent 15%, #000000 15%); */
+    /* -webkit-mask-image: linear-gradient(0deg, transparent, transparent 60px, #000000 60px);
+    mask-image: linear-gradient(0deg, transparent, transparent 60px, #000000 60px); */
 }
 
 body {
@@ -22,13 +22,8 @@ body {
     background-color: #000000;
 }
 
-.iframe-style{
-    height: 3660px;
-    width: 1200px;
-}
-
 .black-rectangle {
-    width: 30px; /* Chiếm đủ không gian chiều rộng của phần tử cha */
+    width: 10px;
     height: auto; /* Chiều cao phụ thuộc vào nội dung, không cố định */
     overflow: auto; /* Cho phép cuộn nếu cần */
     background-color: transparent;
