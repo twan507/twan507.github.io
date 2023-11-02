@@ -23,7 +23,7 @@ body {
 }
 
 .black-rectangle {
-    width: 10px;
+    width: 50px;
     height: auto; /* Chiều cao phụ thuộc vào nội dung, không cố định */
     overflow: auto; /* Cho phép cuộn nếu cần */
     background-color: transparent;
