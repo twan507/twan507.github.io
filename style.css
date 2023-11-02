@@ -83,8 +83,8 @@ header nav a:hover {
     }
     
     header nav a {
-        font-size: 20px; /* Giảm kích thước font chữ */
-        padding: 0 30px; /* Giảm padding giữa các liên kết */
+        font-size: 22px; /* Giảm kích thước font chữ */
+        padding: 0 50px; /* Giảm padding giữa các liên kết */
     }
 
     .logo-container {
@@ -105,8 +105,8 @@ header nav a:hover {
     }
     
     header nav a {
-        font-size: 16px; /* Giảm kích thước font chữ */
-        padding: 0 10px; /* Giảm padding giữa các liên kết */
+        font-size: 10px; /* Giảm kích thước font chữ */
+        padding: 0 30px; /* Giảm padding giữa các liên kết */
     }
 
     .logo-container {
@@ -128,7 +128,7 @@ header nav a:hover {
     }
     
     header nav a {
-        font-size: 12px; /* Giảm kích thước font chữ */
+        font-size: 10px; /* Giảm kích thước font chữ */
         padding: 0 5px; /* Giảm padding giữa các liên kết */
     }
 
