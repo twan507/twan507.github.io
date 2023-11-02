@@ -1,3 +1,10 @@
+html {
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
 .container {
     width: 100%; /* Chiếm đủ không gian chiều rộng của phần tử cha */
     height: auto; /* Chiều cao phụ thuộc vào nội dung, không cố định */
@@ -21,12 +28,10 @@ body {
 }
 
 .black-rectangle {
-    position: fixed; /* Sử dụng fixed để div luôn hiển thị, không phụ thuộc vào việc scroll */
-    width: 30px; /* Chiều rộng là 20px */
-    height: 100%; /* Chiều cao bằng toàn bộ body */
+    width: 30px; /* Chiếm đủ không gian chiều rộng của phần tử cha */
+    height: auto; /* Chiều cao phụ thuộc vào nội dung, không cố định */
+    overflow: auto; /* Cho phép cuộn nếu cần */
     background-color: transparent;
-    left: 0; /* Đặt div sát mép trái của màn hình */
-    top: 0; /* Đặt div sát mép trên của màn hình */
     z-index: 100; /* Đảm bảo div nằm trên các phần tử khác */
   }
   
