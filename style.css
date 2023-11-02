@@ -15,23 +15,25 @@ body {
     background-color: #000000;
 }
 
+.iframe-style{
+    height: 3660px;
+    width: 1200px;
+}
+
+
 /* ----------------------------------------------------------------------------------------------------------------------------- */
 ::-webkit-scrollbar {
     width: 8px; /* Bạn có thể điều chỉnh chiều rộng này */
 }
-
 ::-webkit-scrollbar-track {
     background: #000;
 }
-
 ::-webkit-scrollbar-thumb {
     background: #555; /* Màu đen cho phần tự di chuyển của thanh cuộn */
 }
-
 ::-webkit-scrollbar-thumb:hover {
     background: #555; /* Bạn có thể đặt màu khác khi di chuột qua phần tự di chuyển của thanh cuộn */
 }
-
 
 /* ----------------------------------------------------------------------------------------------------------------------------- */
 
@@ -70,7 +72,6 @@ header nav a:hover {
     transform: translateY(-40%); /* Căn giữa logo theo chiều dọc */
 }
 
-
 #header-logo {
     height: 40px;
 }
@@ -83,8 +84,12 @@ header nav a:hover {
     }
     
     header nav a {
-        font-size: 22px; /* Giảm kích thước font chữ */
-        padding: 0 50px; /* Giảm padding giữa các liên kết */
+        font-size: 20px; /* Giảm kích thước font chữ */
+        padding: 0 40px; /* Giảm padding giữa các liên kết */
+    }
+
+    header nav a:hover {
+        font-size: 22px;
     }
 
     .logo-container {
@@ -98,15 +103,19 @@ header nav a:hover {
 }
 
 /* CSS Responsive cho mobile */
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
     header {
-        padding: 5px 10px; /* Giảm padding */
+        padding: 10px 20px; /* Giảm padding */
         height: auto; /* Cho phép chiều cao tự điều chỉnh */
     }
     
     header nav a {
-        font-size: 20px; /* Giảm kích thước font chữ */
+        font-size: 16px; /* Giảm kích thước font chữ */
         padding: 0 30px; /* Giảm padding giữa các liên kết */
+    }
+
+    header nav a:hover {
+        font-size: 18px;
     }
 
     .logo-container {
@@ -120,24 +129,27 @@ header nav a:hover {
 }
 
 /* CSS Responsive cho mobile */
-@media (max-width: 900) {
+@media (max-width: 800px) {
     header {
-        padding: 0px 5px; /* Giảm padding */
+        padding: 5px 10px; /* Giảm padding */
         height: auto; /* Cho phép chiều cao tự điều chỉnh */
     }
     
     header nav a {
-        font-size: 10px; /* Giảm kích thước font chữ */
-        padding: 0 5px; /* Giảm padding giữa các liên kết */
+        font-size: 12px; /* Giảm kích thước font chữ */
+        padding: 0 30px; /* Giảm padding giữa các liên kết */
+    }
+
+    header nav a:hover {
+        font-size: 14px;
     }
 
     .logo-container {
-        left: 5px; /* Điều chỉnh logo gần mép hơn */
+        left: 10px; /* Điều chỉnh logo gần mép hơn */
         transform: translateY(-50%);
     }
 
     #header-logo {
-        height: 10px; /* Giảm kích thước logo */
         display: none;
     }
 }
