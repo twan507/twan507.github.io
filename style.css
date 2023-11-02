@@ -1,17 +1,15 @@
 .container {
-    width: 100%; /* Ví dụ: 600px */
-    height: 100%; /* Ví dụ: 800px */
-    overflow: auto; /* Cho phép cuộn */
+    width: 100%; /* Chiếm đủ không gian chiều rộng của phần tử cha */
+    height: auto; /* Chiều cao phụ thuộc vào nội dung, không cố định */
+    overflow: auto; /* Cho phép cuộn nếu cần */
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100%; /* Tăng chiều cao tối thiểu lên 100% của chiều cao của màn hình */
-    min-width: 100%; /* Tăng chiều rộng tối thiểu lên 100% của chiều rộng của màn hình */
-    overflow: auto;
     background-color: #000000;
-    -webkit-mask-image: linear-gradient(0deg, transparent, transparent 60px, #000000 60px);
-    mask-image: linear-gradient(0deg, transparent, transparent 60px, #000000 60px);
+    /* -webkit-mask-image: linear-gradient(0deg, transparent, transparent 15%, #000000 15%);
+    mask-image: linear-gradient(0deg, transparent, transparent 15%, #000000 15%); */
 }
+
 body {
     margin: 0;
     background-color: #000000;
@@ -45,7 +43,24 @@ header {
     display: flex;         
     align-items: center; 
     justify-content: center;
-    position: relative; /* Để chứa phần tử có position: absolute */
+    position: sticky; /* Để chứa phần tử có position: absolute */
+    top: 0; /* Thêm dòng này */
+    z-index: 1000; /* Đảm bảo header luôn nằm trên cùng */
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 0 50px;  
+    font-weight: bold;
+    font-family: 'Calibri', sans-serif;
+    transition: font-size 0.3s;
+}
+
+header nav a:hover {
+    font-size: 28px;
 }
 
 .logo-container {
@@ -55,23 +70,75 @@ header {
     transform: translateY(-40%); /* Căn giữa logo theo chiều dọc */
 }
 
+
 #header-logo {
     height: 40px;
 }
 
-header nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 24px;
-    text-transform: uppercase;
-    padding: 0 70px;  
-    font-weight: bold;
-    font-family: 'Calibri', sans-serif;
-    transition: font-size 0.3s;
+/* CSS Responsive cho mobile */
+@media (max-width: 1200px) {
+    header {
+        padding: 10px 20px; /* Giảm padding */
+        height: auto; /* Cho phép chiều cao tự điều chỉnh */
+    }
+    
+    header nav a {
+        font-size: 20px; /* Giảm kích thước font chữ */
+        padding: 0 30px; /* Giảm padding giữa các liên kết */
+    }
+
+    .logo-container {
+        left: 20px; /* Điều chỉnh logo gần mép hơn */
+        transform: translateY(-50%);
+    }
+
+    #header-logo {
+        height: 35px; /* Giảm kích thước logo */
+    }
 }
 
-header nav a:hover {
-    font-size: 28px;
+/* CSS Responsive cho mobile */
+@media (max-width: 992px) {
+    header {
+        padding: 5px 10px; /* Giảm padding */
+        height: auto; /* Cho phép chiều cao tự điều chỉnh */
+    }
+    
+    header nav a {
+        font-size: 18px; /* Giảm kích thước font chữ */
+        padding: 0 15px; /* Giảm padding giữa các liên kết */
+    }
+
+    .logo-container {
+        left: 10px; /* Điều chỉnh logo gần mép hơn */
+        transform: translateY(-50%);
+    }
+
+    #header-logo {
+        height: 20px; /* Giảm kích thước logo */
+    }
+}
+
+/* CSS Responsive cho mobile */
+@media (max-width: 768px) {
+    header {
+        padding: 0px 5px; /* Giảm padding */
+        height: auto; /* Cho phép chiều cao tự điều chỉnh */
+    }
+    
+    header nav a {
+        font-size: 14px; /* Giảm kích thước font chữ */
+        padding: 0 5px; /* Giảm padding giữa các liên kết */
+    }
+
+    .logo-container {
+        left: 5px; /* Điều chỉnh logo gần mép hơn */
+        transform: translateY(-50%);
+    }
+
+    #header-logo {
+        height: 15px; /* Giảm kích thước logo */
+    }
 }
 
 /* ----------------------------------------------------------------------------------------------------------------------------- */
