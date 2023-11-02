@@ -20,6 +20,16 @@ body {
     width: 1200px;
 }
 
+.black-rectangle {
+    position: fixed; /* Sử dụng fixed để div luôn hiển thị, không phụ thuộc vào việc scroll */
+    width: 30px; /* Chiều rộng là 20px */
+    height: 100%; /* Chiều cao bằng toàn bộ body */
+    background-color: transparent;
+    left: 0; /* Đặt div sát mép trái của màn hình */
+    top: 0; /* Đặt div sát mép trên của màn hình */
+    z-index: 100; /* Đảm bảo div nằm trên các phần tử khác */
+  }
+  
 
 /* ----------------------------------------------------------------------------------------------------------------------------- */
 ::-webkit-scrollbar {
@@ -137,7 +147,7 @@ header nav a:hover {
     
     header nav a {
         font-size: 10px; /* Giảm kích thước font chữ */
-        padding: 0 5px; /* Giảm padding giữa các liên kết */
+        padding: 0 10px; /* Giảm padding giữa các liên kết */
     }
 
     header nav a:hover {
