@@ -1,6 +1,6 @@
 var users = {
     "tuan": "chodom",
-    "truong": "123"
-    "mai": "123"
-    "minh" "123"
+    "truong": "123",
+    "mai": "123",
+    "minh": "123"
 };
