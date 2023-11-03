@@ -3,13 +3,12 @@
 <head>
     <!-- Hàm đổi hướng đăng nhập -->
     <script>
-        window.onload = function() {
-            var loggedIn = localStorage.getItem('loggedIn');
-            if (!loggedIn) {
-                window.location.href = 'login.html';
-            }
-        };
-        
+        var loggedIn = localStorage.getItem('loggedIn');
+        if (!loggedIn) {
+            window.location.href = 'login.html';
+        }
+
+        // Định nghĩa hàm logout để sử dụng sau này
         function logout() {
             localStorage.removeItem('loggedIn');
             window.location.href = 'login.html';
