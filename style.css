@@ -22,6 +22,18 @@ body {
     background-color: #000000;
 }
 
+#iframe-container {
+    width: 100%; /* Chiếm đủ không gian chiều rộng của phần tử cha */
+    height: auto; /* Chiều cao phụ thuộc vào nội dung, không cố định */
+    overflow: auto; /* Cho phép cuộn nếu cần */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    position: relative;
+}
+
+
 /* ----------------------------------------------------------------------------------------------------------------------------- */
 ::-webkit-scrollbar {
     width: 8px; /* Bạn có thể điều chỉnh chiều rộng này */
@@ -51,19 +63,22 @@ header {
     z-index: 1000; /* Đảm bảo header luôn nằm trên cùng */
 }
 
-header nav a {
+.nav-btn {
     color: white;
     text-decoration: none;
     font-size: 24px;
     text-transform: uppercase;
-    padding: 0 50px;  
+    padding: 0 50px;
     font-weight: bold;
     font-family: 'Calibri', sans-serif;
     transition: font-size 0.3s;
+    background: none; /* Assuming you don't want a background */
+    border: none; /* Assuming you don't want a border */
+    cursor: pointer; /* To show a pointer on hover */
 }
 
-header nav a:hover {
-    font-size: 28px;
+.nav-btn:hover {
+    font-size: 26px; /* Example effect on hover */
 }
 
 .logo-container {
@@ -84,12 +99,12 @@ header nav a:hover {
         height: auto; /* Cho phép chiều cao tự điều chỉnh */
     }
     
-    header nav a {
+    .nav-btn {
         font-size: 20px; /* Giảm kích thước font chữ */
         padding: 0 40px; /* Giảm padding giữa các liên kết */
     }
 
-    header nav a:hover {
+    .nav-btn:hover {
         font-size: 22px;
     }
 
@@ -110,12 +125,12 @@ header nav a:hover {
         height: auto; /* Cho phép chiều cao tự điều chỉnh */
     }
     
-    header nav a {
+    .nav-btn {
         font-size: 16px; /* Giảm kích thước font chữ */
         padding: 0 30px; /* Giảm padding giữa các liên kết */
     }
 
-    header nav a:hover {
+    .nav-btn:hover {
         font-size: 18px;
     }
 
@@ -136,12 +151,12 @@ header nav a:hover {
         height: auto; /* Cho phép chiều cao tự điều chỉnh */
     }
     
-    header nav a {
+    .nav-btn {
         font-size: 10px; /* Giảm kích thước font chữ */
         padding: 0 10px; /* Giảm padding giữa các liên kết */
     }
 
-    header nav a:hover {
+    .nav-btn:hover {
         font-size: 14px;
     }
 
