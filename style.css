@@ -13,8 +13,8 @@ html {
     align-items: center;
     justify-content: center;
     background-color: #000000;
-    /* -webkit-mask-image: linear-gradient(0deg, transparent, transparent 60px, #000000 60px);
-    mask-image: linear-gradient(0deg, transparent, transparent 60px, #000000 60px); */
+    -webkit-mask-image: linear-gradient(0deg, transparent, transparent 60px, #000000 60px);
+    mask-image: linear-gradient(0deg, transparent, transparent 60px, #000000 60px);
 }
 
 body {
