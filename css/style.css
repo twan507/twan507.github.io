@@ -1,0 +1,234 @@
+html {
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+.container {
+    width: 100%; /* Chiếm đủ không gian chiều rộng của phần tử cha */
+    height: auto; /* Chiều cao phụ thuộc vào nội dung, không cố định */
+    overflow: auto; /* Cho phép cuộn nếu cần */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    /* -webkit-mask-image: linear-gradient(0deg, transparent, transparent 60px, #000000 60px);
+    mask-image: linear-gradient(0deg, transparent, transparent 60px, #000000 60px); */
+}
+
+body {
+    margin: 0;
+    background-color: #000000;
+}
+
+#iframe-container {
+    width: 100%; /* Chiếm đủ không gian chiều rộng của phần tử cha */
+    height: auto; /* Chiều cao phụ thuộc vào nội dung, không cố định */
+    overflow: auto; /* Cho phép cuộn nếu cần */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    position: relative;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+::-webkit-scrollbar {
+    width: 8px; /* Bạn có thể điều chỉnh chiều rộng này */
+}
+::-webkit-scrollbar-track {
+    background: #000;
+}
+::-webkit-scrollbar-thumb {
+    background: #555; /* Màu đen cho phần tự di chuyển của thanh cuộn */
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Bạn có thể đặt màu khác khi di chuột qua phần tự di chuyển của thanh cuộn */
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+
+header {
+    background-color: #000;
+    padding: 5px;
+    height: 50px; 
+    border-bottom: 1px solid white;
+    display: flex;         
+    align-items: center; 
+    justify-content: center;
+    position: sticky; /* Để chứa phần tử có position: absolute */
+    top: 0; /* Thêm dòng này */
+    z-index: 1000; /* Đảm bảo header luôn nằm trên cùng */
+}
+
+.nav-btn {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 0 50px;
+    font-weight: bold;
+    font-family: 'Calibri', sans-serif;
+    transition: font-size 0.3s;
+    background: none; /* Assuming you don't want a background */
+    border: none; /* Assuming you don't want a border */
+    cursor: pointer; /* To show a pointer on hover */
+}
+
+.nav-btn:hover {
+    font-size: 26px; /* Example effect on hover */
+}
+
+.logo-container {
+    position: absolute; /* Đặt logo ra khỏi luồng bố cục thông thường */
+    left: 30px; /* Đặt logo sát mép trái */
+    top: 50%; 
+    transform: translateY(-40%); /* Căn giữa logo theo chiều dọc */
+}
+
+#header-logo {
+    height: 40px;
+}
+
+.logout-container {
+    position: absolute; /* Đặt logo ra khỏi luồng bố cục thông thường */
+    right: 30px; /* Đặt logo sát mép trái */
+    top: 50%; 
+    transform: translateY(-40%); /* Căn giữa logo theo chiều dọc */
+}
+
+.logout-btn {
+    height: 40px;
+}
+
+/* CSS Responsive cho mobile */
+@media (max-width: 1300px) {
+    header {
+        padding: 10px 20px; /* Giảm padding */
+        height: auto; /* Cho phép chiều cao tự điều chỉnh */
+    }
+    
+    .nav-btn {
+        font-size: 20px; /* Giảm kích thước font chữ */
+        padding: 0 40px; /* Giảm padding giữa các liên kết */
+    }
+
+    .nav-btn:hover {
+        font-size: 22px;
+    }
+
+    .logo-container {
+        left: 20px; /* Điều chỉnh logo gần mép hơn */
+        transform: translateY(-40%);
+    }
+
+    #header-logo {
+        height: 25px; /* Giảm kích thước logo */
+    }
+
+    .logout-container {
+        right: 20px; /* Điều chỉnh logo gần mép hơn */
+        transform: translateY(-40%);
+    }
+    
+    .logout-btn {
+        height: 25px;
+    }
+}
+
+/* CSS Responsive cho mobile */
+@media (max-width: 1100px) {
+    header {
+        padding: 10px 20px; /* Giảm padding */
+        height: auto; /* Cho phép chiều cao tự điều chỉnh */
+    }
+    
+    .nav-btn {
+        font-size: 16px; /* Giảm kích thước font chữ */
+        padding: 0 30px; /* Giảm padding giữa các liên kết */
+    }
+
+    .nav-btn:hover {
+        font-size: 17px;
+    }
+
+    .logo-container {
+        left: 10px; /* Điều chỉnh logo gần mép hơn */
+        transform: translateY(-40%);
+    }
+
+    #header-logo {
+        height: 20px; /* Giảm kích thước logo */
+    }
+
+    .logout-container {
+        right: 10px; /* Điều chỉnh logo gần mép hơn */
+        transform: translateY(-40%);
+    }
+    
+    .logout-btn {
+        height: 20px;
+    }
+}
+
+/* CSS Responsive cho mobile */
+@media (max-width: 800px) {
+    header {
+        padding: 5px 10px; /* Giảm padding */
+        height: auto; /* Cho phép chiều cao tự điều chỉnh */
+    }
+    
+    .nav-btn {
+        font-size: 10px; /* Giảm kích thước font chữ */
+        padding: 0 10px; /* Giảm padding giữa các liên kết */
+    }
+
+    .nav-btn:hover {
+        font-size: 11px;
+    }
+
+    .logo-container {
+        left: 10px; /* Điều chỉnh logo gần mép hơn */
+        transform: translateY(-40%);
+    }
+
+    #header-logo {
+        display: none;
+    }
+
+    .logout-container {
+        right: 10px; /* Điều chỉnh logo gần mép hơn */
+        transform: translateY(-40%);
+    }
+    
+    .logout-btn {
+        height: 15px;
+    }
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+footer {
+    background-color: #000;  /* Chọn màu tối hơn cho footer, tùy bạn */
+    height: 50px;  
+    text-align: center;
+    border-top: 0.2px solid white;  /* Sử dụng border-top thay vì border-bottom */
+}
+footer nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 0 70px;  
+    font-weight: bold;
+    font-family: 'Calibri', sans-serif;
+    transition: font-size 0.1s;
+    line-height: 50px;  
+    display: inline-block;  
+    vertical-align: middle;  
+}
+footer nav a:hover {
+    font-size: 28px;
+}
+/* ----------------------------------------------------------------------------------------------------------------------------- */
