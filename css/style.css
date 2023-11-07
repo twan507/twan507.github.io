@@ -54,7 +54,7 @@ header {
     background-color: #000;
     padding: 5px;
     height: 50px; 
-    border-bottom: 1px solid white;
+    border-bottom: 0.3px solid white;
     display: flex;         
     align-items: center; 
     justify-content: center;
@@ -64,21 +64,23 @@ header {
 }
 
 .nav-btn {
-    color: white;
     text-decoration: none;
-    font-size: 24px;
-    text-transform: uppercase;
-    padding: 0 50px;
     font-weight: bold;
     font-family: 'Calibri', sans-serif;
-    transition: font-size 0.3s;
-    background: none; /* Assuming you don't want a background */
-    border: none; /* Assuming you don't want a border */
-    cursor: pointer; /* To show a pointer on hover */
+    font-size: 18px;
+    padding: 5px 30px;
+    margin: 10px;
+    border: 2px solid transparent; /* Viền trong suốt khi không hover */
+    border-radius: 50px; /* Bo tròn để tạo hình capsule */
+    background-color: transparent; /* Nền trong suốt */
+    color: white; /* Màu của chữ, thay đổi nếu cần */
+    cursor: pointer;
+    transition: border-color 0.3s, background-color 0.3s; /* Hiệu ứng mượt mà */
 }
 
 .nav-btn:hover {
-    font-size: 26px; /* Example effect on hover */
+    border-color: #2A2A2A; 
+    background-color: #2A2A2A;
 }
 
 .logo-container {
@@ -111,12 +113,8 @@ header {
     }
     
     .nav-btn {
-        font-size: 20px; /* Giảm kích thước font chữ */
+        font-size: 16px; /* Giảm kích thước font chữ */
         padding: 0 40px; /* Giảm padding giữa các liên kết */
-    }
-
-    .nav-btn:hover {
-        font-size: 22px;
     }
 
     .logo-container {
@@ -146,12 +144,8 @@ header {
     }
     
     .nav-btn {
-        font-size: 16px; /* Giảm kích thước font chữ */
+        font-size: 14px; /* Giảm kích thước font chữ */
         padding: 0 30px; /* Giảm padding giữa các liên kết */
-    }
-
-    .nav-btn:hover {
-        font-size: 17px;
     }
 
     .logo-container {
@@ -183,10 +177,6 @@ header {
     .nav-btn {
         font-size: 10px; /* Giảm kích thước font chữ */
         padding: 0 10px; /* Giảm padding giữa các liên kết */
-    }
-
-    .nav-btn:hover {
-        font-size: 11px;
     }
 
     .logo-container {
