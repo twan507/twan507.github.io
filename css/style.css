@@ -218,8 +218,7 @@ header {
     }
 
     #header-logo {
-        height: 20px;
-        /* display: none; */
+        display: none;
     }
 
     .logout-container {
