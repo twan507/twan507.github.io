@@ -107,28 +107,23 @@ header {
 }
 
 .logout-btn {
-    height: 40px;
+    height: 50px;
 }
 
 /* CSS Responsive cho mobile */
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
     header {
         padding: 10px 20px; /* Giảm padding */
-        height: auto; /* Cho phép chiều cao tự điều chỉnh */
+        height: 35px; /* Cho phép chiều cao tự điều chỉnh */
     }
     
     .nav-btn {
         font-size: 16px; /* Giảm kích thước font chữ */
-        padding: 0 40px; /* Giảm padding giữa các liên kết */
-    }
-
-    .logo-container {
-        left: 20px; /* Điều chỉnh logo gần mép hơn */
-        transform: translateY(-40%);
+        padding: 0 20px; /* Giảm padding giữa các liên kết */
     }
 
     #header-logo {
-        height: 25px; /* Giảm kích thước logo */
+        height: 45px; /* Giảm kích thước logo */
     }
 
     .logout-container {
@@ -137,20 +132,20 @@ header {
     }
     
     .logout-btn {
-        height: 25px;
+        height: 45px;
     }
 }
 
 /* CSS Responsive cho mobile */
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
     header {
         padding: 10px 20px; /* Giảm padding */
-        height: auto; /* Cho phép chiều cao tự điều chỉnh */
+        height: 25; /* Cho phép chiều cao tự điều chỉnh */
     }
     
     .nav-btn {
         font-size: 14px; /* Giảm kích thước font chữ */
-        padding: 0 30px; /* Giảm padding giữa các liên kết */
+        padding: 0 10px; /* Giảm padding giữa các liên kết */
     }
 
     .logo-container {
@@ -159,7 +154,7 @@ header {
     }
 
     #header-logo {
-        height: 20px; /* Giảm kích thước logo */
+        height: 35px; /* Giảm kích thước logo */
     }
 
     .logout-container {
@@ -168,15 +163,15 @@ header {
     }
     
     .logout-btn {
-        height: 20px;
+        height: 35px;
     }
 }
 
 /* CSS Responsive cho mobile */
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     header {
         padding: 5px 10px; /* Giảm padding */
-        height: auto; /* Cho phép chiều cao tự điều chỉnh */
+        height: 20px; /* Cho phép chiều cao tự điều chỉnh */
     }
     
     .nav-btn {
@@ -199,7 +194,7 @@ header {
     }
     
     .logout-btn {
-        height: 15px;
+        height: 25px;
     }
 }
 
