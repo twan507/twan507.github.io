@@ -145,7 +145,7 @@ header {
     
     .nav-btn {
         font-size: 14px; /* Giảm kích thước font chữ */
-        padding: 0 10px; /* Giảm padding giữa các liên kết */
+        padding: 0 15px; /* Giảm padding giữa các liên kết */
     }
 
     .logo-container {
@@ -176,7 +176,8 @@ header {
     
     .nav-btn {
         font-size: 8px; /* Giảm kích thước font chữ */
-        padding: 0 5px; /* Giảm padding giữa các liên kết */
+        padding: 0 8px; /* Giảm padding giữa các liên kết */
+        margin: 3px;
     }
 
     .logo-container {
@@ -194,7 +195,7 @@ header {
     }
     
     .logout-btn {
-        height: 25px;
+        height: 20px;
     }
 }
 
