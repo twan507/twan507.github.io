@@ -200,16 +200,16 @@ header {
 /* CSS Responsive cho mobile */
 @media (max-width: 800px) {
     header {
-        padding: 5px 10px; /* Giảm padding */
-        height: 20px; /* Cho phép chiều cao tự điều chỉnh */
+        padding: 0px 5px; /* Giảm padding */
+        height: auto; /* Cho phép chiều cao tự điều chỉnh */
     }
     
     .nav-btn {
         font-size: 8px; /* Giảm kích thước font chữ */
-        padding: 0 8px; /* Giảm padding giữa các liên kết */
+        padding: 0 5px; /* Giảm padding giữa các liên kết */
         margin: 3px;
         height: 30px;
-        width: 65px;
+        width: 64px;
     }
 
     .logo-container {
@@ -218,7 +218,8 @@ header {
     }
 
     #header-logo {
-        display: none;
+        height: 20px;
+        /* display: none; */
     }
 
     .logout-container {
