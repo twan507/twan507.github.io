@@ -108,3 +108,24 @@ function promptLogin() {
           console.error('Đã có lỗi xảy ra:', error);
       });
 }
+
+// Hàm tạo khung cho tab đang chọn
+var buttons = document.querySelectorAll('.nav-btn');
+function clearActiveButtons() {
+    buttons.forEach(function(button) {
+        button.classList.remove('active');
+    });
+}
+buttons.forEach(function(button) {
+    button.addEventListener('click', function() {
+        clearActiveButtons();
+        this.classList.add('active');
+    });
+});
+function activateFirstButton() {
+    clearActiveButtons();
+    if (buttons.length > 0) {
+        buttons[0].classList.add('active');
+    }
+}
+document.addEventListener('DOMContentLoaded', activateFirstButton);

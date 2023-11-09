@@ -83,6 +83,11 @@ header {
     background-color: #2A2A2A;
 }
 
+.nav-btn.active {
+    border-color: #2A2A2A; /* Màu viền khi được chọn */
+    background-color: #2A2A2A; /* Màu nền khi được chọn */
+}
+
 .logo-container {
     position: absolute; /* Đặt logo ra khỏi luồng bố cục thông thường */
     left: 30px; /* Đặt logo sát mép trái */
@@ -175,8 +180,8 @@ header {
     }
     
     .nav-btn {
-        font-size: 10px; /* Giảm kích thước font chữ */
-        padding: 0 10px; /* Giảm padding giữa các liên kết */
+        font-size: 8px; /* Giảm kích thước font chữ */
+        padding: 0 5px; /* Giảm padding giữa các liên kết */
     }
 
     .logo-container {
