@@ -1,0 +1,113 @@
+.footer {
+  position: relative; /* Hoặc sticky, tùy thuộc vào hiệu ứng bạn muốn */
+  bottom: 0; /* Đặt nó tại phía dưới cùng của viewport */
+  left: 0;
+  width: 100%; /* Đảm bảo footer trải dài toàn chiều ngang của viewport */
+  z-index: 10; /* Z-index cao hơn container để nó nằm trên cùng */
+}
+  
+.content-container {
+  flex: 1;
+  background: #000000;
+  /* Your content container styles */
+}
+
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+  border-top: 1px solid rgb(167, 165, 165);
+}
+
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Điều này sẽ đặt khoảng trống giữa các phần tử con */
+  align-items: flex-start; /* Điều này sẽ căn các items theo chiều dọc ở đầu trên */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section-left {
+  flex: 1;
+  margin-right: auto;
+}
+
+.footer-section-right {
+  margin-left: auto;
+}
+
+#fs1 {
+  width: 220px;
+}
+
+#fs2 {
+  width: 200px;
+}
+
+#fs3 {
+  width: 120px;
+}
+
+.footer-section-right ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.footer-section-right ul li {
+  list-style: none;
+}
+
+.footer-section-right ul li a {
+  color: #a0a0a0;
+  text-decoration: none;
+}
+
+.footer-section-right p {
+  font-family: 'Calibri', sans-serif;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #C031C7;
+}
+
+.footer-links a {
+  display: inline-block;
+  font-weight: bold;
+  font-family: 'Calibri', sans-serif;
+  font-size: 20px;
+  color: #696969;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 0px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-bottom {
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #333;
+}
+
+@media (max-width: 768px) {
+  .footer-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section-right {
+    margin: 0 0 20px;
+  }
+
+  .footer-links a {
+    margin: 0 0 10px;
+  }
+}
+
+.footer-logo {
+  max-width: 200px; /* Or the width of your actual logo */
+  height: auto; /* This keeps the aspect ratio intact */
+}
