@@ -45,22 +45,22 @@ function updateIframeSize() {
 
   if (currentWidth < originWidth && originHeight == 3590) {
     const widthDecrease = originWidth - currentWidth;
-    newHeight -= widthDecrease * (originHeight / originWidth + 0.015);
+    newHeight -= widthDecrease * (originHeight / originWidth + 0.015 - 0.05);
   }
 
   if (currentWidth < originWidth && originHeight == 2370) {
     const widthDecrease = originWidth - currentWidth;
-    newHeight -= widthDecrease * (originHeight / originWidth - 0.009);
+    newHeight -= widthDecrease * (originHeight / originWidth - 0.009 - 0.05);
   }
 
   if (currentWidth < originWidth && originHeight == 3260) {
     const widthDecrease = originWidth - currentWidth;
-    newHeight -= widthDecrease * (originHeight / originWidth + 0.009);
+    newHeight -= widthDecrease * (originHeight / originWidth + 0.009 - 0.05);
  }
 
  if (currentWidth < originWidth && originHeight == 2480) {
   const widthDecrease = originWidth - currentWidth;
-  newHeight -= widthDecrease * (originHeight / originWidth + 0.01);
+  newHeight -= widthDecrease * (originHeight / originWidth + 0.01 - 0.05);
  }
 
   // Đặt chiều cao mới cho iframe
