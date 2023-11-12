@@ -128,3 +128,9 @@ input[type="password"] {
     font-size: 16px;
 }
 
+#message {
+    font-family: 'Calibri', sans-serif;
+    color: white;
+    font-size: 16px;
+}
+

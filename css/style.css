@@ -121,13 +121,22 @@ header {
 
 .logout-container {
     position: absolute; /* Đặt logo ra khỏi luồng bố cục thông thường */
-    right: 30px; /* Đặt logo sát mép trái */
+    right: 10px; /* Đặt logo sát mép trái */
     top: 50%; 
     transform: translateY(-50%); /* Căn giữa logo theo chiều dọc */
 }
 
 .logout-btn {
     height: 50px;
+}
+
+.logout-container a {
+    display: flex;
+    align-items: center; /* Đảm bảo text và hình ảnh cùng căn giữa theo chiều dọc */
+    text-decoration: none; /* Loại bỏ gạch chân của liên kết */
+    color: white; /* Kế thừa màu chữ từ phần tử cha */
+    font-family: 'Calibri', sans-serif;
+    font-size: 18px;
 }
 
 /* CSS Responsive cho mobile */

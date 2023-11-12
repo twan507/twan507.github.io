@@ -1,12 +1,26 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
+    <!-- Hàm đổi hướng đăng nhập -->
+    <script>
+        var loggedIn = localStorage.getItem('loggedIn');
+        if (!loggedIn) {
+            window.location.href = 'login.html';
+        }
+
+        // Định nghĩa hàm logout để sử dụng sau này
+        function logout() {
+            localStorage.removeItem('loggedIn');
+            window.location.href = 'login.html';
+        }
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="photo/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/footer.css">
-    <script src="js/index.js" defer></script>
+    <script src="js/home.js" defer></script>
     <title>T2M Invest</title>
 </head>
 <body>
@@ -20,11 +34,11 @@
         <button id="page3-btn" class="nav-btn">Dòng tiền nhóm ngành</button>
         <button id="page4-btn" class="nav-btn">Bộ lọc cổ phiếu</button>    
 
-        <div class="logout-container">
-            <a href="login.html">
-              <p>Đăng nhập</p>
-              <img src="photo/login.png" alt="Đăng nhập" class="logout-btn"/>
-            </a>
+        <div class="logout-container" onclick="logout();" style="cursor: pointer;">
+          <a>
+            <p>Đăng xuất</p>
+            <img src="photo/logout.png" alt="Đăng xuất" class="logout-btn"/>
+          </a>
         </div>
 
     </header>
