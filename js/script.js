@@ -41,12 +41,11 @@ function updateIframeSize() {
   const originHeight = parseInt(iframe.height, 10);
 
   const currentWidth = window.innerWidth;
-  const widthDecrease = originWidth - currentWidth;
-  var newHeight = originHeight;
+  let newHeight = originHeight;
 
   if (currentWidth < originWidth) {
     const widthDecrease = originWidth - currentWidth;
-    newHeight -= widthDecrease * (originHeight/originWidth - 0.01);
+    newHeight -= widthDecrease * (originHeight/originWidth - 0.06);
   }
 
   // Đặt chiều cao mới cho iframe
