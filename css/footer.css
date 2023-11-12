@@ -97,23 +97,23 @@
   height: auto; /* This keeps the aspect ratio intact */
 }
 
-/* @media (max-width: 800px) {
+@media (max-width: 1000px) {
   .footer-inner {
     margin-top: 0px;
   }
 
   .footer-section-right p {
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 0px;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 20px;
     color: #C031C7;
   }
 
   .footer-section-right ul li a {
     color: #a0a0a0;
     text-decoration: none;
-    font-size: 10px;
+    font-size: 16px;
     margin: 0;
     padding: 0;
   }
@@ -124,22 +124,22 @@
   }
 
   #fs1 {
-    width: 120px;
+    width: 200px;
   }
   
   #fs2 {
-    width: 110px;
+    width: 190px;
   }
   
   #fs3 {
-    width: 40px;
+    width: 70px;
   }
 
   .footer-logo {
     max-width: 150px; 
     height: auto; 
   }
-} */
+}
 
 @media (max-width: 800px) {
   .footer-inner {
