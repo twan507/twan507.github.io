@@ -37,10 +37,10 @@ document.addEventListener('DOMContentLoaded', function() {
 function updateIframeSize() {
   const iframe = document.querySelector('.iframe-style');
   // Lấy giá trị từ thuộc tính width và height của thẻ iframe
-  const originWidth = parseInt(iframe.width, 10);
-  const originHeight = parseInt(iframe.height, 10);
+  var originWidth = parseInt(iframe.width, 10);
+  var originHeight = parseInt(iframe.height, 10);
 
-  const currentWidth = window.innerWidth;
+  var currentWidth = window.innerWidth;
   let newHeight = originHeight;
 
   if (currentWidth < originWidth) {
