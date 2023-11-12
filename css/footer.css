@@ -92,22 +92,52 @@
   border-top: 1px solid #333;
 }
 
-@media (max-width: 768px) {
-  .footer-inner {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer-section-right {
-    margin: 0 0 20px;
-  }
-
-  .footer-links a {
-    margin: 0 0 10px;
-  }
-}
-
 .footer-logo {
-  max-width: 200px; /* Or the width of your actual logo */
+  max-width: 250px; /* Or the width of your actual logo */
   height: auto; /* This keeps the aspect ratio intact */
 }
+
+/* @media (max-width: 800px) {
+  .footer-inner {
+    margin-top: 0px;
+  }
+
+  .footer-section-right p {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-size: 12px;
+    color: #C031C7;
+  }
+
+  .footer-section-right ul li a {
+    color: #a0a0a0;
+    text-decoration: none;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer-section-right ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  #fs1 {
+    width: 120px;
+  }
+  
+  #fs2 {
+    width: 110px;
+  }
+  
+  #fs3 {
+    width: 40px;
+  }
+
+  .footer-logo {
+    max-width: 150px; 
+    height: auto; 
+  }
+} */
+
