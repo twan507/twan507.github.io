@@ -11,15 +11,15 @@ document.addEventListener('DOMContentLoaded', function() {
   };
 
   function changeIframeContent(page) {
-    container.innerHTML = iframes[page];
     showOverlay();
+    container.innerHTML = iframes[page];  // Load new iframe content immediately
   }
 
   function showOverlay() {
     overlay.style.display = 'block';
     setTimeout(function() {
       overlay.style.display = 'none';
-    }, 3000);
+    }, 4000);  // Hide overlay after 4 seconds
   }
 
   // Event listeners for buttons
