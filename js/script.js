@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
     overlay.style.display = 'block';
     setTimeout(function() {
       overlay.style.display = 'none';
-    }, 4000);  // Hide overlay after 4 seconds
+    }, 3000);
   }
 
   // Event listeners for buttons
