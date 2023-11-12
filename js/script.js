@@ -45,7 +45,15 @@ function updateIframeSize() {
 
   if (currentWidth < originWidth) {
     const widthDecrease = originWidth - currentWidth;
-    newHeight -= widthDecrease * (originHeight/originWidth - 0.05);
+
+    if (originHeight < 3000) {
+      newHeight -= widthDecrease * (originHeight/originWidth - 0.1);
+    }
+
+    if (originHeight > 3000) {
+      newHeight -= widthDecrease * (originHeight/originWidth);
+    }
+
   }
 
   // Đặt chiều cao mới cho iframe
