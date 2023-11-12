@@ -43,12 +43,25 @@ function updateIframeSize() {
   const currentWidth = window.innerWidth;
   let newHeight = originHeight;
 
-  if (currentWidth < originWidth) {
-    // Tính toán sự thay đổi chiều cao dựa trên mỗi pixel giảm của chiều rộng
+  if (currentWidth < originWidth && originHeight == 3590) {
     const widthDecrease = originWidth - currentWidth;
-    // newHeight -= widthDecrease * 1.8;
-    newHeight -= widthDecrease * (originHeight/originWidth - 0.06);
+    newHeight -= widthDecrease * (originHeight / originWidth + 0.017);
   }
+
+  if (currentWidth < originWidth && originHeight == 2370) {
+    const widthDecrease = originWidth - currentWidth;
+    newHeight -= widthDecrease * (originHeight / originWidth - 0.007);
+  }
+
+  if (currentWidth < originWidth && originHeight == 3260) {
+    const widthDecrease = originWidth - currentWidth;
+    newHeight -= widthDecrease * (originHeight / originWidth + 0.011);
+ }
+
+ if (currentWidth < originWidth && originHeight == 2480) {
+  const widthDecrease = originWidth - currentWidth;
+  newHeight -= widthDecrease * (originHeight / originWidth - 0.01);
+ }
 
   // Đặt chiều cao mới cho iframe
   iframe.style.height = `${newHeight}px`;
@@ -108,7 +121,6 @@ function promptLogin() {
           console.error('Đã có lỗi xảy ra:', error);
       });
 }
-
 
 // Hàm tạo khung cho tab đang chọn
 var buttons = document.querySelectorAll('.nav-btn');
