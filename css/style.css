@@ -36,6 +36,23 @@ body {
     position: relative;
 }
 
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;  /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    z-index: 100;
+    background-color: rgba(0, 0, 0); /* Optional: for semi-transparent background */
+}
+
+#loading-gif {
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+}
+
 
 /* ----------------------------------------------------------------------------------------------------------------------------- */
 ::-webkit-scrollbar {

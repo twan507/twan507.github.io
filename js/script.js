@@ -37,30 +37,17 @@ document.addEventListener('DOMContentLoaded', function() {
 function updateIframeSize() {
   const iframe = document.querySelector('.iframe-style');
   // Lấy giá trị từ thuộc tính width và height của thẻ iframe
-  var originWidth = parseInt(iframe.width, 10);
-  var originHeight = parseInt(iframe.height, 10);
+  const originWidth = parseInt(iframe.width, 10);
+  const originHeight = parseInt(iframe.height, 10);
 
-  var currentWidth = window.innerWidth;
+  const currentWidth = window.innerWidth;
   let newHeight = originHeight;
 
   if (currentWidth < originWidth) {
-    var widthDecrease = originWidth - currentWidth;
-
-    if (originHeight == 3590) {
-      newHeight -= widthDecrease * (originHeight/originWidth + 0.01);
-    }
-
-    if (originHeight == 2370) {
-      newHeight -= widthDecrease * (originHeight/originWidth - 0.007);
-    }
-
-    if (originHeight == 3260) {
-      newHeight -= widthDecrease * (originHeight/originWidth + 0.011);
-    }
-
-    if (originHeight == 2480) {
-      newHeight -= widthDecrease * (originHeight/originWidth - 0.01);
-    }
+    // Tính toán sự thay đổi chiều cao dựa trên mỗi pixel giảm của chiều rộng
+    const widthDecrease = originWidth - currentWidth;
+    // newHeight -= widthDecrease * 1.8;
+    newHeight -= widthDecrease * (originHeight/originWidth - 0.06);
   }
 
   // Đặt chiều cao mới cho iframe
