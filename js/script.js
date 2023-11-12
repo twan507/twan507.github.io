@@ -44,26 +44,10 @@ function updateIframeSize() {
   const widthDecrease = originWidth - currentWidth;
   var newHeight = originHeight;
 
-  // if (currentWidth < originWidth) {
-  //   const widthDecrease = originWidth - currentWidth;
-  //   newHeight -= widthDecrease * (originHeight/originWidth - 0.06);
-  // }
-
   if (currentWidth < originWidth) {
-    if (originHeight == 3590) {
-      newHeight -= widthDecrease * (originHeight/originWidth + 0.017);
-    }
-    if (originHeight == 2370) {
-      newHeight -= widthDecrease * (originHeight/originWidth - 0.01);
-    }
-    if (originHeight == 3260) {
-      newHeight -= widthDecrease * (originHeight/originWidth + 0.011);
-    }
-    if (originHeight == 2480) {
-      newHeight -= widthDecrease * (originHeight/originWidth);
-    }
+    const widthDecrease = originWidth - currentWidth;
+    newHeight -= widthDecrease * (originHeight/originWidth - 0.01);
   }
-
 
   // Đặt chiều cao mới cho iframe
   iframe.style.height = `${newHeight}px`;
