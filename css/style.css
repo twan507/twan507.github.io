@@ -139,6 +139,12 @@ header {
     font-size: 18px;
 }
 
+.logout-container a p {
+    color: white; /* Kế thừa màu chữ từ phần tử cha */
+    font-family: 'Calibri', sans-serif;
+    font-size: 18px;
+}
+
 /* CSS Responsive cho mobile */
 @media (max-width: 1400px) {
     header {
@@ -162,6 +168,10 @@ header {
     
     .logout-btn {
         height: 45px;
+    }
+
+    .logout-container a p {
+        font-size: 16px;
     }
 }
 
@@ -194,6 +204,10 @@ header {
     .logout-btn {
         height: 35px;
     }
+
+    .logout-container a p {
+        font-size: 14px;
+    }
 }
 
 /* CSS Responsive cho mobile */
@@ -221,6 +235,10 @@ header {
     .logout-container {
         right: 10px; /* Điều chỉnh logo gần mép hơn */
         transform: translateY(-50%);
+    }
+
+    .logout-container a p {
+        font-size: 12px;
     }
     
     .logout-btn {
@@ -259,6 +277,10 @@ header {
     
     .logout-btn {
         height: 20px;
+    }
+
+    .logout-container a p {
+        display: none;
     }
 }
 
