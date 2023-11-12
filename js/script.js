@@ -47,7 +47,7 @@ function updateIframeSize() {
     var widthDecrease = originWidth - currentWidth;
 
     if (originHeight == 3590) {
-      newHeight -= widthDecrease * (originHeight/originWidth + 0.015);
+      newHeight -= widthDecrease * (originHeight/originWidth + 0.01);
     }
 
     if (originHeight == 2370) {
@@ -55,7 +55,7 @@ function updateIframeSize() {
     }
 
     if (originHeight == 3260) {
-      newHeight -= widthDecrease * (originHeight/originWidth + 0.0011);
+      newHeight -= widthDecrease * (originHeight/originWidth + 0.011);
     }
 
     if (originHeight == 2480) {
