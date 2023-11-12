@@ -43,25 +43,12 @@ function updateIframeSize() {
   const currentWidth = window.innerWidth;
   let newHeight = originHeight;
 
-  if (currentWidth < originWidth && originHeight == 3590) {
+  if (currentWidth < originWidth) {
+    // Tính toán sự thay đổi chiều cao dựa trên mỗi pixel giảm của chiều rộng
     const widthDecrease = originWidth - currentWidth;
-    newHeight -= widthDecrease * (originHeight / originWidth + 0.015 - 0.05);
+    // newHeight -= widthDecrease * 1.8;
+    newHeight -= widthDecrease * (originHeight/originWidth - 0.06);
   }
-
-  if (currentWidth < originWidth && originHeight == 2370) {
-    const widthDecrease = originWidth - currentWidth;
-    newHeight -= widthDecrease * (originHeight / originWidth - 0.009 - 0.05);
-  }
-
-  if (currentWidth < originWidth && originHeight == 3260) {
-    const widthDecrease = originWidth - currentWidth;
-    newHeight -= widthDecrease * (originHeight / originWidth + 0.009 - 0.05);
- }
-
- if (currentWidth < originWidth && originHeight == 2480) {
-  const widthDecrease = originWidth - currentWidth;
-  newHeight -= widthDecrease * (originHeight / originWidth + 0.01 - 0.05);
- }
 
   // Đặt chiều cao mới cho iframe
   iframe.style.height = `${newHeight}px`;
@@ -121,24 +108,3 @@ function promptLogin() {
           console.error('Đã có lỗi xảy ra:', error);
       });
 }
-
-// Hàm tạo khung cho tab đang chọn
-var buttons = document.querySelectorAll('.nav-btn');
-function clearActiveButtons() {
-    buttons.forEach(function(button) {
-        button.classList.remove('active');
-    });
-}
-buttons.forEach(function(button) {
-    button.addEventListener('click', function() {
-        clearActiveButtons();
-        this.classList.add('active');
-    });
-});
-function activateFirstButton() {
-    clearActiveButtons();
-    if (buttons.length > 0) {
-        buttons[0].classList.add('active');
-    }
-}
-document.addEventListener('DOMContentLoaded', activateFirstButton);
