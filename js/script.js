@@ -58,7 +58,7 @@ function updateIframeSize() {
       newHeight -= widthDecrease * (originHeight/originWidth - 0.03);
     }
 
-    if (originHeight > 2480) {
+    if (originHeight == 2480) {
       newHeight -= widthDecrease * (originHeight/originWidth - 0.04);
     }
 
