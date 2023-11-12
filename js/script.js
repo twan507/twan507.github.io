@@ -44,10 +44,23 @@ function updateIframeSize() {
   let newHeight = originHeight;
 
   if (currentWidth < originWidth) {
-    // Tính toán sự thay đổi chiều cao dựa trên mỗi pixel giảm của chiều rộng
-    const widthDecrease = originWidth - currentWidth;
-    // newHeight -= widthDecrease * 1.8;
-    newHeight -= widthDecrease * (originHeight/originWidth - 0.06);
+    var widthDecrease = originWidth - currentWidth;
+
+    if (originHeight == 3590) {
+      newHeight -= widthDecrease * (originHeight/originWidth + 0.015);
+    }
+
+    if (originHeight == 2370) {
+      newHeight -= widthDecrease * (originHeight/originWidth - 0.007);
+    }
+
+    if (originHeight == 3260) {
+      newHeight -= widthDecrease * (originHeight/originWidth + 0.0011);
+    }
+
+    if (originHeight == 2480) {
+      newHeight -= widthDecrease * (originHeight/originWidth - 0.01);
+    }
   }
 
   // Đặt chiều cao mới cho iframe
@@ -109,3 +122,23 @@ function promptLogin() {
       });
 }
 
+// Hàm tạo khung cho tab đang chọn
+var buttons = document.querySelectorAll('.nav-btn');
+function clearActiveButtons() {
+    buttons.forEach(function(button) {
+        button.classList.remove('active');
+    });
+}
+buttons.forEach(function(button) {
+    button.addEventListener('click', function() {
+        clearActiveButtons();
+        this.classList.add('active');
+    });
+});
+function activateFirstButton() {
+    clearActiveButtons();
+    if (buttons.length > 0) {
+        buttons[0].classList.add('active');
+    }
+}
+document.addEventListener('DOMContentLoaded', activateFirstButton);
