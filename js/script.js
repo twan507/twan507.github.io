@@ -47,11 +47,11 @@ function updateIframeSize() {
     const widthDecrease = originWidth - currentWidth;
 
     if (originHeight < 3000) {
-      newHeight -= widthDecrease * (originHeight/originWidth - 0.1);
+      newHeight -= widthDecrease * (originHeight/originWidth - 0.08);
     }
 
     if (originHeight > 3000) {
-      newHeight -= widthDecrease * (originHeight/originWidth);
+      newHeight -= widthDecrease * (originHeight/originWidth - 0.02);
     }
 
   }
