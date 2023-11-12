@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     page1: '<iframe title="moneystream_2" class="iframe-style" width="1200px" height="3590px" src="https://app.powerbi.com/view?r=eyJrIjoiNDczN2NiNDctZDE5Ni00YzNhLWJhNTMtMWYxOWU2NDYzNzE3IiwidCI6IjUxZmUxNTRlLThlNTYtNGM2NC05ZDM5LTU2NTc0ZDk3MmU1YyIsImMiOjEwfQ%3D%3D" frameborder="0" style="background-color: #000;"></iframe>',
     page2: '<iframe title="moneystream_2" class="iframe-style" width="1200px" height="2370px" src="https://app.powerbi.com/view?r=eyJrIjoiNWQ4ZjVhMGUtOTkzZS00OTA3LWJlMWEtMWYzMTE5NjA0MGY5IiwidCI6IjUxZmUxNTRlLThlNTYtNGM2NC05ZDM5LTU2NTc0ZDk3MmU1YyIsImMiOjEwfQ%3D%3D" frameborder="0" style="background-color: #000;"></iframe>',
     page3: '<iframe title="moneystream_2" class="iframe-style" width="1200px" height="3260px" src="https://app.powerbi.com/view?r=eyJrIjoiNmIyMGQxZWEtNmRhOC00OGJlLWFiNzEtN2QxMjg4ZTgyN2U0IiwidCI6IjUxZmUxNTRlLThlNTYtNGM2NC05ZDM5LTU2NTc0ZDk3MmU1YyIsImMiOjEwfQ%3D%3D" frameborder="0" style="background-color: #000;"></iframe>',
-    page4: '<iframe title="moneystream_2" class="iframe-style" width="1200px" height="2500px" src="https://app.powerbi.com/view?r=eyJrIjoiZGUxNTAxZmQtZmM3Zi00MTU2LTljZjAtYzM5MTE1Nzg4NzQwIiwidCI6IjUxZmUxNTRlLThlNTYtNGM2NC05ZDM5LTU2NTc0ZDk3MmU1YyIsImMiOjEwfQ%3D%3D" frameborder="0" style="background-color: #000;"></iframe>'
+    page4: '<iframe title="moneystream_2" class="iframe-style" width="1200px" height="2480px" src="https://app.powerbi.com/view?r=eyJrIjoiZGUxNTAxZmQtZmM3Zi00MTU2LTljZjAtYzM5MTE1Nzg4NzQwIiwidCI6IjUxZmUxNTRlLThlNTYtNGM2NC05ZDM5LTU2NTc0ZDk3MmU1YyIsImMiOjEwfQ%3D%3D" frameborder="0" style="background-color: #000;"></iframe>'
   };
 
   function changeIframeContent(page) {
@@ -44,23 +44,10 @@ function updateIframeSize() {
   let newHeight = originHeight;
 
   if (currentWidth < originWidth) {
-    var widthDecrease = originWidth - currentWidth;
-
-    if (originHeight == 3590) {
-      newHeight -= widthDecrease * (originHeight/originWidth + 0.017);
-    }
-
-    if (originHeight == 2370) {
-      newHeight -= widthDecrease * (originHeight/originWidth - 0.007);
-    }
-
-    if (originHeight == 3260) {
-      newHeight -= widthDecrease * (originHeight/originWidth + 0.0011);
-    }
-
-    if (originHeight == 2480) {
-      newHeight -= widthDecrease * (originHeight/originWidth - 0.01);
-    }
+    // Tính toán sự thay đổi chiều cao dựa trên mỗi pixel giảm của chiều rộng
+    const widthDecrease = originWidth - currentWidth;
+    // newHeight -= widthDecrease * 1.8;
+    newHeight -= widthDecrease * (originHeight/originWidth - 0.06);
   }
 
   // Đặt chiều cao mới cho iframe
@@ -121,6 +108,7 @@ function promptLogin() {
           console.error('Đã có lỗi xảy ra:', error);
       });
 }
+
 
 // Hàm tạo khung cho tab đang chọn
 var buttons = document.querySelectorAll('.nav-btn');
