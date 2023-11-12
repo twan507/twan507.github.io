@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
     overlay.style.display = 'block';
     setTimeout(function() {
       overlay.style.display = 'none';
-    }, 3000);
+    }, 4000);
   }
 
   // Event listeners for buttons
