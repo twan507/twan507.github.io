@@ -134,3 +134,20 @@ input[type="password"] {
     font-size: 16px;
 }
 
+h3 {
+    font-family: 'Calibri', sans-serif;
+    color: #c73131; /* Change as per your color scheme */
+    font-size: 22px; /* Adjust the size as needed */
+    margin-top: 20px; /* Adds space above the heading */
+    margin-bottom: 20px; /* Adds space below the heading */
+}
+
+.login-container {
+    display: flex; /* Enables flexbox */
+    flex-direction: column; /* Stacks child elements vertically */
+    align-items: left; /* Centers items horizontally */
+    justify-content: center; /* Centers items vertically */
+    height: 100vh; /* Sets the height to fill the viewport */
+    padding: 20px; /* Optional padding */
+}
+
