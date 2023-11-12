@@ -11,8 +11,8 @@ document.addEventListener('DOMContentLoaded', function() {
   };
 
   function changeIframeContent(page) {
+    container.innerHTML = iframes[page];
     showOverlay();
-    container.innerHTML = iframes[page];  // Load new iframe content immediately
   }
 
   function showOverlay() {
