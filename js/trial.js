@@ -46,7 +46,7 @@ function updateIframeSize() {
     const widthDecrease = originWidth - currentWidth;
 
     if (originHeight == 4190) {
-      newHeight -= widthDecrease * (originHeight/originWidth);
+      newHeight -= widthDecrease * (originHeight/originWidth - 0.01);
     }
 
     if (originHeight == 2750) {
@@ -54,11 +54,11 @@ function updateIframeSize() {
     }
 
     if (originHeight == 3800) {
-      newHeight -= widthDecrease * (originHeight/originWidth - 0.01);
+      newHeight -= widthDecrease * (originHeight/originWidth - 0.02);
     }
 
     if (originHeight == 2920) {
-      newHeight -= widthDecrease * (originHeight/originWidth - 0.02);
+      newHeight -= widthDecrease * (originHeight/originWidth - 0.03);
     }
 
   }
