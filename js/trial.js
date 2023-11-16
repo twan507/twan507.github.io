@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Define your iframe HTML strings here
   var iframes = {
-    page1: '<iframe title="moneystream_2" class="iframe-style" width="1400px" height="4190px" src="https://app.powerbi.com/view?r=eyJrIjoiNDczN2NiNDctZDE5Ni00YzNhLWJhNTMtMWYxOWU2NDYzNzE3IiwidCI6IjUxZmUxNTRlLThlNTYtNGM2NC05ZDM5LTU2NTc0ZDk3MmU1YyIsImMiOjEwfQ%3D%3D" frameborder="0" style="background-color: #000;"></iframe>'
+    page1: '<iframe title="moneystream_2" class="iframe-style" width="1300px" height="3890px" src="https://app.powerbi.com/view?r=eyJrIjoiNDczN2NiNDctZDE5Ni00YzNhLWJhNTMtMWYxOWU2NDYzNzE3IiwidCI6IjUxZmUxNTRlLThlNTYtNGM2NC05ZDM5LTU2NTc0ZDk3MmU1YyIsImMiOjEwfQ%3D%3D" frameborder="0" style="background-color: #000;"></iframe>'
     // Removed iframes for page2, page3, and page4
   };
 
@@ -45,20 +45,20 @@ function updateIframeSize() {
   if (currentWidth < originWidth) {
     const widthDecrease = originWidth - currentWidth;
 
-    if (originHeight == 4190) {
-      newHeight -= widthDecrease * (originHeight/originWidth - 0.02);
+    if (originHeight == 3890) {
+      newHeight -= widthDecrease * (originHeight/originWidth - 0.01);
     }
 
-    if (originHeight == 2750) {
-      newHeight -= widthDecrease * (originHeight/originWidth - 0.06);
-    }
-
-    if (originHeight == 3800) {
+    if (originHeight == 2560) {
       newHeight -= widthDecrease * (originHeight/originWidth - 0.03);
     }
 
-    if (originHeight == 2920) {
-      newHeight -= widthDecrease * (originHeight/originWidth - 0.05);
+    if (originHeight == 3530) {
+      newHeight -= widthDecrease * (originHeight/originWidth - 0.01);
+    }
+
+    if (originHeight == 2720) {
+      newHeight -= widthDecrease * (originHeight/originWidth - 0.03);
     }
 
   }
