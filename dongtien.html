@@ -1,41 +1,58 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
+    <!-- Hàm đổi hướng đăng nhập -->
+    <script>
+        var loggedIn = localStorage.getItem('loggedIn');
+        if (!loggedIn) {
+            window.location.href = 'login.html';
+        }
+
+        // Định nghĩa hàm logout để sử dụng sau này
+        function logout() {
+            localStorage.removeItem('loggedIn');
+            window.location.href = 'login.html';
+        }
+    </script>
+
+    <style>
+      #page2-btn {
+        background-color: #2A2A2A; /* Màu nền đặc biệt cho nút page1-btn */
+      }
+    </style>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="photo/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/footer.css">
-    <script src="js/trial.js" defer></script>
-    <style>
-      #page1-btn {
-        background-color: #2A2A2A; /* Màu nền đặc biệt cho nút page1-btn */
-      }
-    </style>
-    <title>T2M Invest - Tổng quan</title>
+    <script src="js/home.js" defer></script>
+    <title>T2M Invest - Dòng tiền</title>
 </head>
 <body>
     <header>
         <div class="logo-container">
-          <a href="index.html"><img src="photo/logo.png" alt="Header Logo" id="header-logo"></a>
+            <a href="index.html"><img src="photo/logo.png" alt="Header Logo" id="header-logo"></a>
         </div>
 
-        <button id="page1-btn" class="nav-btn">Tổng quan thị trường</button>
-        <button id="page2-btn" class="nav-btn">Dòng tiền thị trường</button>
-        <button id="page3-btn" class="nav-btn">Dòng tiền nhóm ngành</button>
-        <button id="page4-btn" class="nav-btn">Bộ lọc cổ phiếu</button>    
+        <a href="tongquan.html"><button id="page1-btn" class="nav-btn">Tổng quan thị trường</button></a>
+        <a href="dongtien.html"><button id="page2-btn" class="nav-btn">Dòng tiền thị trường</button></a>
+        <a href="nhomnganh.html"><button id="page3-btn" class="nav-btn">Dòng tiền nhóm ngành</button></a>
+        <a href="cophieu.html"><button id="page4-btn" class="nav-btn">Bộ lọc cổ phiếu</button></a>
 
-        <div class="logout-container">
-            <a href="login.html">
-              <p>Đăng nhập</p>
-              <img src="photo/login.png" alt="Đăng nhập" class="logout-btn"/>
-            </a>
+        <div class="logout-container" onclick="logout();" style="cursor: pointer;">
+          <a>
+            <p>Đăng xuất</p>
+            <img src="photo/logout.png" alt="Đăng xuất" class="logout-btn"/>
+          </a>
         </div>
 
     </header>
 
     <div class="container">
-        <div id="iframe-container"></div>
+      <div id="iframe-container">
+        <iframe title="T2M Invest" class="iframe-style" width="1300px" height="3060px" src="https://app.powerbi.com/view?r=eyJrIjoiNWQ4ZjVhMGUtOTkzZS00OTA3LWJlMWEtMWYzMTE5NjA0MGY5IiwidCI6IjUxZmUxNTRlLThlNTYtNGM2NC05ZDM5LTU2NTc0ZDk3MmU1YyIsImMiOjEwfQ%3D%3D" frameborder="0" style="background-color: #000;"></iframe>
+      </div>
         <div id="overlay">
           <img id="loading-gif" src="photo/gif_loading.gif" alt="Loading">
         </div>

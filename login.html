@@ -2,7 +2,8 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>T2M Login</title>
+    <title>T2M Invest - Đăng nhập</title>
+    <link rel="icon" href="photo/favicon.ico" type="image/x-icon">
     <script src="js/users.js"></script>
     <link rel="stylesheet" href="css/login.css">
     <script>
@@ -16,7 +17,7 @@
 
                 if (users[userId] && users[userId] === password) {
                     localStorage.setItem('loggedIn', true);
-                    window.location.href = 'home.html';
+                    window.location.href = 'tongquan.html';
                 } else {
                     document.getElementById('message').innerText = 'ID hoặc mật khẩu không đúng. Vui lòng thử lại.';
                 }
@@ -24,7 +25,7 @@
             
             var loggedIn = localStorage.getItem('loggedIn');
             if (loggedIn) {
-                window.location.href = 'home.html';
+                window.location.href = 'tongquan.html';
             }
         });
     </script>

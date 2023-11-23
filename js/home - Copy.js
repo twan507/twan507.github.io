@@ -1,14 +1,35 @@
 document.addEventListener('DOMContentLoaded', function() {
+  var container = document.getElementById('iframe-container');
   var overlay = document.getElementById('overlay');
+
+  // Define your iframe HTML strings here
+  var iframes = {
+    page1: '<iframe title="T2M Invest" class="iframe-style" width="1300px" height="3890px" src="https://app.powerbi.com/view?r=eyJrIjoiNDczN2NiNDctZDE5Ni00YzNhLWJhNTMtMWYxOWU2NDYzNzE3IiwidCI6IjUxZmUxNTRlLThlNTYtNGM2NC05ZDM5LTU2NTc0ZDk3MmU1YyIsImMiOjEwfQ%3D%3D" frameborder="0" style="background-color: #000;"></iframe>',
+    page2: '<iframe title="T2M Invest" class="iframe-style" width="1300px" height="3060px" src="https://app.powerbi.com/view?r=eyJrIjoiNWQ4ZjVhMGUtOTkzZS00OTA3LWJlMWEtMWYzMTE5NjA0MGY5IiwidCI6IjUxZmUxNTRlLThlNTYtNGM2NC05ZDM5LTU2NTc0ZDk3MmU1YyIsImMiOjEwfQ%3D%3D" frameborder="0" style="background-color: #000;"></iframe>',
+    page3: '<iframe title="T2M Invest" class="iframe-style" width="1300px" height="3820px" src="https://app.powerbi.com/view?r=eyJrIjoiNmIyMGQxZWEtNmRhOC00OGJlLWFiNzEtN2QxMjg4ZTgyN2U0IiwidCI6IjUxZmUxNTRlLThlNTYtNGM2NC05ZDM5LTU2NTc0ZDk3MmU1YyIsImMiOjEwfQ%3D%3D" frameborder="0" style="background-color: #000;"></iframe>',
+    page4: '<iframe title="T2M Invest" class="iframe-style" width="1300px" height="2720px" src="https://app.powerbi.com/view?r=eyJrIjoiZGUxNTAxZmQtZmM3Zi00MTU2LTljZjAtYzM5MTE1Nzg4NzQwIiwidCI6IjUxZmUxNTRlLThlNTYtNGM2NC05ZDM5LTU2NTc0ZDk3MmU1YyIsImMiOjEwfQ%3D%3D" frameborder="0" style="background-color: #000;"></iframe>'
+  };
+
+  function changeIframeContent(page) {
+    container.innerHTML = iframes[page];
+    showOverlay();
+  }
 
   function showOverlay() {
     overlay.style.display = 'block';
     setTimeout(function() {
       overlay.style.display = 'none';
-    }, 3000);
+    }, 4000);
   }
-  
-  showOverlay(); // Gọi hàm ngay khi trang tải xong
+
+  // Event listeners for buttons
+  document.getElementById('page1-btn').addEventListener('click', function() { changeIframeContent('page1'); });
+  document.getElementById('page2-btn').addEventListener('click', function() { changeIframeContent('page2'); });
+  document.getElementById('page3-btn').addEventListener('click', function() { changeIframeContent('page3'); });
+  document.getElementById('page4-btn').addEventListener('click', function() { changeIframeContent('page4'); });
+
+  // Initialize with the content of page 1
+  changeIframeContent('page1');
 });
 
 
@@ -102,3 +123,23 @@ function promptLogin() {
       });
 }
 
+// Hàm tạo khung cho tab đang chọn
+var buttons = document.querySelectorAll('.nav-btn');
+function clearActiveButtons() {
+    buttons.forEach(function(button) {
+        button.classList.remove('active');
+    });
+}
+buttons.forEach(function(button) {
+    button.addEventListener('click', function() {
+        clearActiveButtons();
+        this.classList.add('active');
+    });
+});
+function activateFirstButton() {
+    clearActiveButtons();
+    if (buttons.length > 0) {
+        buttons[0].classList.add('active');
+    }
+}
+document.addEventListener('DOMContentLoaded', activateFirstButton);
