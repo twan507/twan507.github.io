@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Define your iframe HTML strings here
   var iframes = {
-    page1: '<iframe title="moneystream_2" class="iframe-style" width="1300px" height="3890px" src="https://app.powerbi.com/view?r=eyJrIjoiNDczN2NiNDctZDE5Ni00YzNhLWJhNTMtMWYxOWU2NDYzNzE3IiwidCI6IjUxZmUxNTRlLThlNTYtNGM2NC05ZDM5LTU2NTc0ZDk3MmU1YyIsImMiOjEwfQ%3D%3D" frameborder="0" style="background-color: #000;"></iframe>'
+    page1: '<iframe title="T2M Invest" class="iframe-style" width="1300px" height="3890px" src="https://app.powerbi.com/view?r=eyJrIjoiNDczN2NiNDctZDE5Ni00YzNhLWJhNTMtMWYxOWU2NDYzNzE3IiwidCI6IjUxZmUxNTRlLThlNTYtNGM2NC05ZDM5LTU2NTc0ZDk3MmU1YyIsImMiOjEwfQ%3D%3D" frameborder="0" style="background-color: #000;"></iframe>'
     // Removed iframes for page2, page3, and page4
   };
 

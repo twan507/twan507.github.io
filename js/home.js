@@ -4,10 +4,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Define your iframe HTML strings here
   var iframes = {
-    page1: '<iframe title="moneystream_2" class="iframe-style" width="1300px" height="3890px" src="https://app.powerbi.com/view?r=eyJrIjoiNDczN2NiNDctZDE5Ni00YzNhLWJhNTMtMWYxOWU2NDYzNzE3IiwidCI6IjUxZmUxNTRlLThlNTYtNGM2NC05ZDM5LTU2NTc0ZDk3MmU1YyIsImMiOjEwfQ%3D%3D" frameborder="0" style="background-color: #000;"></iframe>',
-    page2: '<iframe title="moneystream_2" class="iframe-style" width="1300px" height="2560px" src="https://app.powerbi.com/view?r=eyJrIjoiNWQ4ZjVhMGUtOTkzZS00OTA3LWJlMWEtMWYzMTE5NjA0MGY5IiwidCI6IjUxZmUxNTRlLThlNTYtNGM2NC05ZDM5LTU2NTc0ZDk3MmU1YyIsImMiOjEwfQ%3D%3D" frameborder="0" style="background-color: #000;"></iframe>',
-    page3: '<iframe title="moneystream_2" class="iframe-style" width="1300px" height="3530px" src="https://app.powerbi.com/view?r=eyJrIjoiNmIyMGQxZWEtNmRhOC00OGJlLWFiNzEtN2QxMjg4ZTgyN2U0IiwidCI6IjUxZmUxNTRlLThlNTYtNGM2NC05ZDM5LTU2NTc0ZDk3MmU1YyIsImMiOjEwfQ%3D%3D" frameborder="0" style="background-color: #000;"></iframe>',
-    page4: '<iframe title="moneystream_2" class="iframe-style" width="1300px" height="2720px" src="https://app.powerbi.com/view?r=eyJrIjoiZGUxNTAxZmQtZmM3Zi00MTU2LTljZjAtYzM5MTE1Nzg4NzQwIiwidCI6IjUxZmUxNTRlLThlNTYtNGM2NC05ZDM5LTU2NTc0ZDk3MmU1YyIsImMiOjEwfQ%3D%3D" frameborder="0" style="background-color: #000;"></iframe>'
+    page1: '<iframe title="T2M Invest" class="iframe-style" width="1300px" height="3890px" src="https://app.powerbi.com/view?r=eyJrIjoiNDczN2NiNDctZDE5Ni00YzNhLWJhNTMtMWYxOWU2NDYzNzE3IiwidCI6IjUxZmUxNTRlLThlNTYtNGM2NC05ZDM5LTU2NTc0ZDk3MmU1YyIsImMiOjEwfQ%3D%3D" frameborder="0" style="background-color: #000;"></iframe>',
+    page2: '<iframe title="T2M Invest" class="iframe-style" width="1300px" height="3060px" src="https://app.powerbi.com/view?r=eyJrIjoiNWQ4ZjVhMGUtOTkzZS00OTA3LWJlMWEtMWYzMTE5NjA0MGY5IiwidCI6IjUxZmUxNTRlLThlNTYtNGM2NC05ZDM5LTU2NTc0ZDk3MmU1YyIsImMiOjEwfQ%3D%3D" frameborder="0" style="background-color: #000;"></iframe>',
+    page3: '<iframe title="T2M Invest" class="iframe-style" width="1300px" height="3820px" src="https://app.powerbi.com/view?r=eyJrIjoiNmIyMGQxZWEtNmRhOC00OGJlLWFiNzEtN2QxMjg4ZTgyN2U0IiwidCI6IjUxZmUxNTRlLThlNTYtNGM2NC05ZDM5LTU2NTc0ZDk3MmU1YyIsImMiOjEwfQ%3D%3D" frameborder="0" style="background-color: #000;"></iframe>',
+    page4: '<iframe title="T2M Invest" class="iframe-style" width="1300px" height="2720px" src="https://app.powerbi.com/view?r=eyJrIjoiZGUxNTAxZmQtZmM3Zi00MTU2LTljZjAtYzM5MTE1Nzg4NzQwIiwidCI6IjUxZmUxNTRlLThlNTYtNGM2NC05ZDM5LTU2NTc0ZDk3MmU1YyIsImMiOjEwfQ%3D%3D" frameborder="0" style="background-color: #000;"></iframe>'
   };
 
   function changeIframeContent(page) {
@@ -50,7 +50,7 @@ function updateIframeSize() {
       newHeight -= widthDecrease * (originHeight/originWidth - 0.03);
     }
 
-    if (originHeight == 2560) {
+    if (originHeight == 3060) {
       newHeight -= widthDecrease * (originHeight/originWidth - 0.03);
     }
 
