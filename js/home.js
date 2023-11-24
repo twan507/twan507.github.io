@@ -102,3 +102,28 @@ function promptLogin() {
       });
 }
 
+// Tự động refresh sau 3 phút
+function setupRefreshTimer() {
+  var refreshAfter = 2 * 60 * 1000; // 3 phút
+  var timeoutId;
+
+  function refreshPage() {
+      window.location.reload();
+  }
+
+  function resetTimer() {
+      clearTimeout(timeoutId);
+      timeoutId = setTimeout(refreshPage, refreshAfter);
+  }
+
+  // Thiết lập timer ban đầu
+  timeoutId = setTimeout(refreshPage, refreshAfter);
+
+  // Lắng nghe sự kiện người dùng và đặt lại timer
+  ['click', 'keypress', 'scroll'].forEach(function(e) {
+      document.addEventListener(e, resetTimer);
+  });
+}
+
+// Khởi chạy hàm khi trang web tải xong
+window.onload = setupRefreshTimer;
