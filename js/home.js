@@ -102,9 +102,8 @@ function promptLogin() {
       });
 }
 
-// Tự động refresh sau 3 phút
 function setupRefreshTimer() {
-  var refreshAfter = 2 * 60 * 1000; // 3 phút
+  var refreshAfter = 3 * 60 * 1000; // 3 phút
   var timeoutId;
 
   function refreshPage() {
@@ -119,10 +118,13 @@ function setupRefreshTimer() {
   // Thiết lập timer ban đầu
   timeoutId = setTimeout(refreshPage, refreshAfter);
 
-  // Lắng nghe sự kiện người dùng và đặt lại timer
+  // Lắng nghe sự kiện người dùng và đặt lại timer trên document
   ['click', 'keypress', 'scroll'].forEach(function(e) {
       document.addEventListener(e, resetTimer);
   });
+
+  // Lắng nghe sự kiện click riêng biệt trên thẻ body
+  document.body.addEventListener('click', resetTimer);
 }
 
 // Khởi chạy hàm khi trang web tải xong
