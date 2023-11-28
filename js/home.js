@@ -101,31 +101,3 @@ function promptLogin() {
           console.error('Đã có lỗi xảy ra:', error);
       });
 }
-
-function setupRefreshTimer() {
-  var refreshAfter = 3 * 60 * 1000; // 3 phút
-  var timeoutId;
-
-  function refreshPage() {
-      window.location.reload();
-  }
-
-  function resetTimer() {
-      clearTimeout(timeoutId);
-      timeoutId = setTimeout(refreshPage, refreshAfter);
-  }
-
-  // Thiết lập timer ban đầu
-  timeoutId = setTimeout(refreshPage, refreshAfter);
-
-  // Lắng nghe sự kiện người dùng và đặt lại timer trên document
-  ['click', 'keypress', 'scroll'].forEach(function(e) {
-      document.addEventListener(e, resetTimer);
-  });
-
-  // Lắng nghe sự kiện click riêng biệt trên thẻ body
-  document.body.addEventListener('click', resetTimer);
-}
-
-// Khởi chạy hàm khi trang web tải xong
-window.onload = setupRefreshTimer;
