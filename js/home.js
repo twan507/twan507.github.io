@@ -101,3 +101,25 @@ function promptLogin() {
           console.error('Đã có lỗi xảy ra:', error);
       });
 }
+
+
+let timeoutId;
+
+function resetTimeout() {
+    // Hủy bỏ hẹn giờ cũ nếu có
+    clearTimeout(timeoutId);
+
+    // Thiết lập hẹn giờ mới
+    timeoutId = setTimeout(() => {
+        window.location.reload(); // Làm mới trang web
+    }, 300000); // 300000 milliseconds = 5 minutes
+}
+
+// Khởi tạo hẹn giờ khi trang được tải
+resetTimeout();
+
+// Lắng nghe sự kiện trên toàn trang để đặt lại hẹn giờ
+document.addEventListener('click', resetTimeout);
+document.addEventListener('mousemove', resetTimeout);
+document.addEventListener('keypress', resetTimeout);
+document.addEventListener('scroll', resetTimeout);
