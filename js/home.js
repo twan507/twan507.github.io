@@ -24,23 +24,7 @@ function updateIframeSize() {
 
   if (currentWidth < originWidth) {
     const widthDecrease = originWidth - currentWidth;
-
-    if (originHeight == 3890) {
-      newHeight -= widthDecrease * (originHeight/originWidth - 0.03);
-    }
-
-    if (originHeight == 3060) {
-      newHeight -= widthDecrease * (originHeight/originWidth - 0.03);
-    }
-
-    if (originHeight == 3530) {
-      newHeight -= widthDecrease * (originHeight/originWidth - 0.03);
-    }
-
-    if (originHeight == 2720) {
-      newHeight -= widthDecrease * (originHeight/originWidth - 0.03);
-    }
-
+    newHeight -= widthDecrease * (originHeight/originWidth - 0.03);
   }
 
   // Đặt chiều cao mới cho iframe
