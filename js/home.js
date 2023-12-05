@@ -96,7 +96,7 @@ function resetTimeout() {
     // Thiết lập hẹn giờ mới
     timeoutId = setTimeout(() => {
         window.location.reload(); // Làm mới trang web
-    }, 100000); // 300000 milliseconds = 5 minutes
+    }, 600000); // 300000 milliseconds = 5 minutes
 }
 
 // Khởi tạo hẹn giờ khi trang được tải
