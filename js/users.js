@@ -1,5 +1,4 @@
 var users = {
-    "admin": "t2madmin1123",
     "thanghvtc.eco@gmail.com": "tha0014",
     "thinhvuong2411@gmail.com": "thi0013",
     "thanhnguyen508@gmail.com" : "tha0010",
@@ -14,5 +13,7 @@ var users = {
     "kemdua88@gmail.com":  "kem0020",
     "dovancong.vn@gmail.com":  "dov0021",
     "nguyenminhchunghp@gmail.com":  "ngu0022",
-    "guest": 't2mstock'
+    "hoangtrungkhcn0109@gmail.com":  "hoa0017",
+    "phuonganhnguyen11112000k@gmail.com":  "phu0018",
+    "admin": "t2madmin1123"
 };
