@@ -15,5 +15,8 @@ var users = {
     "nguyenminhchunghp@gmail.com":  "ngu0022",
     "hoangtrungkhcn0109@gmail.com":  "hoa0017",
     "phuonganhnguyen11112000k@gmail.com":  "phu0018",
+    "luong.phanthanh@gmail.com":  "luo0014",
+    "hoibn1311@gmail.com":  "hoi0015",
+    "quangthanh141190@gmail.com":  "qua0016",
     "admin": "t2madmin1123"
 };
