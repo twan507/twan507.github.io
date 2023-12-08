@@ -7,5 +7,6 @@ var users = {
     "quanghaxd16@gmail.com" : "qua0012",
     "kingpapergame@gmail.com":  "kin0015",
     "vubamung@gmail.com":  "vub0016",
+    "phungsondmk@gmail.com":  "phu0018",
     "guest": 't2mstock'
 };
