@@ -19,6 +19,6 @@ var users = {
     "hoibn1311@gmail.com":  "hoi0015",
     "quangthanh141190@gmail.com":  "qua0016",
     "director.ngoc@gmail.com":  "dir0019",
-    "duong.mhgroup@gmail.com": "duo0020"
+    "duong.mhgroup@gmail.com": "duo0020",
     "admin": "t2madmin1123"
 };
