@@ -27,5 +27,9 @@ var users = {
     "h.and.cat.fashion@gmail.com":"h64425",
     "luongngavpb@gmail.com":"l59926",
     "kientrananh@gmail.com":"k28627",
+    "pixi2808@gmail.com":"p28828",
+    "ngotrungkienktqd@gmail.com":"n46829",
+    "tuantm44@gmail.com":"t60930",
+    "nguyenbichha0979@gmail.com":"n87131",
     "admin":"t2madmin1123"
 };
