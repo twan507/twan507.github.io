@@ -1,11 +1,3 @@
-// var users = {
-//     "admin": "t2madmin1123",
-//     "doducthang": "t2mstock",
-//     "lethinhvuong": "t2mstock",
-//     "jokerxyz": "jok001!",
-//     "guest": 't2mstock'
-// };
-
 var users = {
     "thanghvtc.eco@gmail.com": "tha0014",
     "thinhvuong2411@gmail.com": "thi0013",
@@ -29,5 +21,6 @@ var users = {
     "director.ngoc@gmail.com":  "dir0019",
     "duong.mhgroup@gmail.com": "d69920",
     "duchunghsh@gmail.com": "d97721",
+    "thuyvd0310@gmail.com":	"t99922",
     "admin": "t2madmin1123"
 };
