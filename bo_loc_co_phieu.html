@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <script>
+        //Hàm tự động refresh
+        let timeoutId;
+        function resetTimeout() {
+            // Hủy bỏ hẹn giờ cũ nếu có
+            clearTimeout(timeoutId);
+
+            // Thiết lập hẹn giờ mới
+            timeoutId = setTimeout(() => {
+                window.location.reload(); // Làm mới trang web
+            }, 600000); // 300000 milliseconds = 5 minutes
+        }
+
+        // Khởi tạo hẹn giờ khi trang được tải
+        resetTimeout();
+
+        // Lắng nghe sự kiện trên toàn trang để đặt lại hẹn giờ
+        document.addEventListener('click', resetTimeout);
+        document.addEventListener('mousemove', resetTimeout);
+        document.addEventListener('keypress', resetTimeout);
+    </script>
+
+    <style>
+      #page4-btn {
+        background-color: #2A2A2A; /* Màu nền đặc biệt cho nút page1-btn */
+      }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="photo/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="js/header_footer.js"></script>
+    <script src="js/home.js" defer></script>
+    <title>Cổ phiếu</title>
+</head>
+<body>
+  <div id="header-placeholder"></div>
+
+  <div class="container">
+      <div id="iframe-container">
+        <iframe title="T2M Invest" class="iframe-style" width="1300px" height="2720px" src="https://app.powerbi.com/view?r=eyJrIjoiNjBhNDU4YTYtNzQwNC00YjI0LWE0ZmMtZWYwOWM3NmM1MDBkIiwidCI6IjUxZmUxNTRlLThlNTYtNGM2NC05ZDM5LTU2NTc0ZDk3MmU1YyIsImMiOjEwfQ%3D%3D" frameborder="0" style="background-color: #000;"></iframe>
+      </div>
+      <div id="overlay">
+        <img id="loading-gif" src="photo/gif_loading.gif" alt="Loading">
+      </div>
+  </div>
+
+  <div id="footer-placeholder"></div>
+</body>
+</html>

@@ -75,16 +75,15 @@
 .footer-links a {
   display: inline-block;
   font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
   font-family: 'Calibri', sans-serif;
   font-size: 20px;
   color: #696969;
-  padding: 5px 10px;
-  text-decoration: none;
-  border-radius: 5px;
-  margin-top: 0px;
-  margin-left: 20px;
-  margin-bottom: 20px;
+  padding-bottom: 10px;
+  margin: 0px;
 }
+
 
 .footer-bottom {
   width: 100%;
@@ -93,7 +92,9 @@
 }
 
 .footer-logo {
-  max-width: 250px; /* Or the width of your actual logo */
+  margin-top: 30px;
+  margin-bottom: 10px;
+  max-width: 120px; /* Or the width of your actual logo */
   height: auto; /* This keeps the aspect ratio intact */
 }
 

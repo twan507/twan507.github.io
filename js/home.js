@@ -1,3 +1,4 @@
+// Hàm loading screen
 document.addEventListener('DOMContentLoaded', function() {
   var overlay = document.getElementById('overlay');
 
@@ -10,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   showOverlay(); // Gọi hàm ngay khi trang tải xong
 });
+
 
 
 // Hàm cập nhật kích thước iframe
@@ -33,6 +35,8 @@ function updateIframeSize() {
 
 window.addEventListener('resize', updateIframeSize); // Thêm event listener để cập nhật kích thước khi cửa sổ được resize
 document.addEventListener('DOMContentLoaded', updateIframeSize); // Cập nhật kích thước ban đầu khi tải trang
+
+
 
 // Hàm thêm hình chữ nhật màu đen vào cuối container
 function addOverlayToContainer() {
@@ -60,50 +64,26 @@ function addOverlayToContainer() {
 addOverlayToContainer();
 
 
-//Hàm đăng nhập
-function promptLogin() {
-  fetch('credentials.json')
-      .then(response => {
-          if (!response.ok) {
-              throw new Error('Không thể tải file credentials.json');
-          }
-          return response.json();
-      })
-      .then(credentials => {
-          var userId = prompt('Nhập ID của bạn:');
-          var password = prompt('Nhập mật khẩu của bạn:');
-          
-          if (credentials[userId] && credentials[userId] === password) {
-              alert('Đăng nhập thành công!');
-              // Thực hiện các hành động sau khi đăng nhập thành công ở đây.
-          } else {
-              alert('ID hoặc mật khẩu không đúng. Vui lòng thử lại.');
-              promptLogin(); // Gọi lại hàm để người dùng đăng nhập lại.
-          }
-      })
-      .catch(error => {
-          console.error('Đã có lỗi xảy ra:', error);
-      });
+// Hàm đổi hướng đăng nhập
+var loggedIn = localStorage.getItem('loggedIn');
+var loginTime = localStorage.getItem('loginTime');
+
+if (loggedIn) {
+    var currentTime = new Date().getTime();
+    var timeDiff = currentTime - loginTime;
+
+    if (timeDiff > 24 * 60 * 60 * 1000) { // 24 giờ tính bằng milliseconds
+        logout(); // Gọi hàm đăng xuất nếu đã quá 24 giờ
+    } 
+    // else {
+    //     window.location.href = 'tong_quan_thi_truong.html';
+    // }
+} else {
+    window.location.href = 'login.html';
 }
 
-
-let timeoutId;
-
-function resetTimeout() {
-    // Hủy bỏ hẹn giờ cũ nếu có
-    clearTimeout(timeoutId);
-
-    // Thiết lập hẹn giờ mới
-    timeoutId = setTimeout(() => {
-        window.location.reload(); // Làm mới trang web
-    }, 600000); // 300000 milliseconds = 5 minutes
+function logout() {
+    localStorage.removeItem('loggedIn');
+    localStorage.removeItem('loginTime'); // Xóa cả timestamp
+    window.location.href = 'login.html';
 }
-
-// Khởi tạo hẹn giờ khi trang được tải
-resetTimeout();
-
-// Lắng nghe sự kiện trên toàn trang để đặt lại hẹn giờ
-document.addEventListener('click', resetTimeout);
-document.addEventListener('mousemove', resetTimeout);
-document.addEventListener('keypress', resetTimeout);
-document.addEventListener('scroll', resetTimeout);

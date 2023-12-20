@@ -105,6 +105,49 @@ button[type="submit"]:active {
     transform: translateY(2px); /* Tạo cảm giác nút được nhấn xuống */
 }
 
+.divider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .divider_line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #9ea4a8;
+  }
+  
+  .divider_text {
+    color: #9ea4a8;
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+
+button[type="trial_button"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #005abb;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Hiệu ứng hover trên nút submit */
+button[type="trial_button"]:hover {
+    background-color: #007bff; /* Màu sáng hơn hoặc tối hơn khi hover */
+    color: #ffffff;
+}
+  
+/* Hiệu ứng active (click) trên nút submit */
+button[type="trial_button"]:active {
+    background-color: #007bff; /* Màu khi nút được click */
+    color: #ffffff;
+    transform: translateY(2px); /* Tạo cảm giác nút được nhấn xuống */
+}
+
 .signup-link {
     text-align: center;
     margin-top: 10px;
@@ -131,7 +174,7 @@ input[type="password"] {
 
 #message {
     font-family: 'Calibri', sans-serif;
-    color: white;
+    color: red;
     font-size: 16px;
 }
 

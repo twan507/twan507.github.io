@@ -22,9 +22,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Event listeners for buttons
   document.getElementById('page1-btn').addEventListener('click', function() { changeIframeContent('page1'); });
-  document.getElementById('page2-btn').addEventListener('click', function() { window.location.href = 'trial.login.html'; });
-  document.getElementById('page3-btn').addEventListener('click', function() { window.location.href = 'trial.login.html'; });
-  document.getElementById('page4-btn').addEventListener('click', function() { window.location.href = 'trial.login.html'; });
+  document.getElementById('page2-btn').addEventListener('click', function() { window.location.href = 'trial_login.html'; });
+  document.getElementById('page3-btn').addEventListener('click', function() { window.location.href = 'trial_login.html'; });
+  document.getElementById('page4-btn').addEventListener('click', function() { window.location.href = 'trial_login.html'; });
 
   // Initialize with the content of page 1
   changeIframeContent('page1');
