@@ -31,5 +31,6 @@ var users = {
     "ngotrungkienktqd@gmail.com":"n46829",
     "tuantm44@gmail.com":"t60930",
     "nguyenbichha0979@gmail.com":"n87131",
+    "suzukingocnguyen@gmail.com":"s39132",  
     "admin":"t2madmin1123"
 };
