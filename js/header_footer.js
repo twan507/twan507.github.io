@@ -35,34 +35,43 @@ document.addEventListener('DOMContentLoaded', function () {
                     </div>
                 </div>
         
-            <div class="footer-section-right" id="fs1">
-                <p class="footer-title">Sản phẩm</p>
-                <ul>
-                <li><a href="https://t.me/+U3k02NxS8ygwMGE1">Phân tích dòng tiền</a></li>
-                <li><a href="https://t.me/+U3k02NxS8ygwMGE1">Phân tích nhóm ngành</a></li>
-                <li><a href="https://t.me/+U3k02NxS8ygwMGE1">Bộ lọc chuyên sâu</a></li>
-                <li><a href="https://t.me/+U3k02NxS8ygwMGE1">Danh mục đầu tư T2M</a></li>
-                </ul>
-            </div>
+                <div class="footer-section-right" id="fs1">
+                    <p class="footer-title">Sản phẩm</p>
+                    <ul>
+                    <li><a href="https://t.me/+U3k02NxS8ygwMGE1">Phân tích dòng tiền</a></li>
+                    <li><a href="https://t.me/+U3k02NxS8ygwMGE1">Phân tích nhóm ngành</a></li>
+                    <li><a href="https://t.me/+U3k02NxS8ygwMGE1">Bộ lọc chuyên sâu</a></li>
+                    <li><a href="https://t.me/+U3k02NxS8ygwMGE1">Danh mục đầu tư T2M</a></li>
+                    </ul>
+                </div>
         
-            <div class="footer-section-right" id="fs2">
-                <p class="footer-title">T2M Learning</p>
-                <ul>
-                <li><a href="https://t.me/+U3k02NxS8ygwMGE1">Hướng dẫn sử dụng</a></li>
-                <li><a href="https://t.me/+U3k02NxS8ygwMGE1">Kiến thức đầu tư</a></li>
-                <li><a href="https://t.me/+U3k02NxS8ygwMGE1">Phân tích kĩ thuật</a></li>
-                <li><a href="https://t.me/+U3k02NxS8ygwMGE1">Đầu tư chuyên nghiệp</a></li>
-                </ul>
-            </div>
+                <div class="footer-section-right" id="fs2">
+                    <p class="footer-title">T2M Learning</p>
+                    <ul>
+                    <li><a href="https://t.me/+U3k02NxS8ygwMGE1">Hướng dẫn sử dụng</a></li>
+                    <li><a href="https://t.me/+U3k02NxS8ygwMGE1">Kiến thức đầu tư</a></li>
+                    <li><a href="https://t.me/+U3k02NxS8ygwMGE1">Phân tích kĩ thuật</a></li>
+                    <li><a href="https://t.me/+U3k02NxS8ygwMGE1">Đầu tư chuyên nghiệp</a></li>
+                    </ul>
+                </div>
         
-            <div class="footer-section-right" id="fs3">
-                <p class="footer-title">Hỗ trợ</p>
-                <ul>
-                <li><a href="https://www.facebook.com/t2m.invest">Facebook</a></li>
-                <li><a href="https://t.me/+U3k02NxS8ygwMGE1">Telegram</a></li>
-                <li><a href="https://zalo.me/0338662238">Zalo</a></li>
-                </ul>
-            </div>
+                <div class="footer-section-right" id="fs3">
+                    <p class="footer-title">Hỗ trợ</p>
+
+                    <div class="social-logo">
+                        <a href="https://www.facebook.com/t2m.invest"><img src="photo/fb_logo.png" alt="T2M Logo"></a>
+                        <a href="https://t.me/+U3k02NxS8ygwMGE1"><img src="photo/tele_logo.png" alt="T2M Logo"></a>
+                        <a href="https://zalo.me/0338662238"><img src="photo/zalo_logo.png" alt="T2M Logo"></a>
+                    </div>
+  
+                    <p id="call-to-action"> Tham gia cộng đồng đầu tư T2M Invest </p>
+                    <div class="social-qr">
+                        <img src="photo/fb_qr.png" alt="T2M Logo">
+                        <img src="photo/tele_qr.png" alt="T2M Logo">
+                        <img src="photo/zalo_qr.png" alt="T2M Logo">
+                    </div>
+
+                </div>
             
             </div>
             <div class="footer-bottom">
